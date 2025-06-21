@@ -1,30 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gallery - MultiFix</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>MultiFix - Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .gallery-photo {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>MultiFix Gallery</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html">Services</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <h2>Our Work</h2>
-        
-<div class="gallery">
-  <img src="images/gallery/whatsapp-image-2025-06-21-13-51-19.jpg" alt="MultiFix project photo" style="width: 300px; height: auto;" />
-
-  <p>MultiFix – приклад виконаної роботи</p>
-</div>
-
-    </main>
-    <footer>&copy; 2025 MultiFix</footer>
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img class="gallery-photo" src="images/gallery/whatsapp-image-2025-06-21-13-51-19.jpg" alt="MultiFix project photo" />
+    </div>
 </body>
 </html>
