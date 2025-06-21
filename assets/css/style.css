@@ -1,0 +1,9 @@
+body { font-family: sans-serif; margin: 0; padding: 0; background: #f8f8f8; color: #333; }
+header { background: #222; color: white; padding: 1em; text-align: center; }
+nav ul { list-style: none; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+nav li { margin: 0 1em; }
+main { padding: 2em; }
+h2 { margin-top: 2em; }
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1em; }
+.gallery-grid img { width: 100%; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+footer { background: #eee; text-align: center; padding: 1em; margin-top: 2em; }
