@@ -2,130 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MultiFix Montreal – Handyman Services</title>
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-    header { background-color: #2f4858; color: white; padding: 30px 20px; text-align: center; }
-    h1 { margin: 0; font-size: 2em; }
-    .tabs { text-align: center; margin: 20px 0; }
-    .tabs button {
-      margin: 0 10px;
-      padding: 10px 20px;
-      border: none;
-      background: #2f4858;
-      color: white;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .tabs button:hover {
-      background: #476272;
-    }
-    .lang-section { display: none; padding: 20px; max-width: 800px; margin: auto; background: white; box-shadow: 0 0 10px #ccc; }
-    .lang-section.active { display: block; }
-    ul { padding-left: 20px; }
-    form { margin-top: 30px; }
-    label { display: block; margin-top: 10px; }
-    input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 5px; }
-    button[type="submit"] {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #2f4858;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-    footer {
-      background: #e0e0e0;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-  </style>
-  <script>
-    function switchLang(lang) {
-      document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
-      document.getElementById('lang-' + lang).classList.add('active');
-    }
-    window.onload = () => switchLang('en');
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MultiFix Montreal</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
     <h1>MultiFix Montreal</h1>
-    <p>Good work is done calmly</p>
+    <p>Professional Handyman Services</p>
   </header>
 
-  <div class="tabs">
-    <button onclick="switchLang('en')">English</button>
-    <button onclick="switchLang('fr')">Français</button>
-    <button onclick="switchLang('ua')">Українська</button>
-  </div>
-
-  <div id="lang-en" class="lang-section">
-    <h2>About</h2>
-    <p>Reliable handyman services in Westmount, Downtown, Côte-des-Neiges and NDG. Ivan offers calm, professional repairs for your home.</p>
-    <h2>Services</h2>
-    <ul>
-      <li>Painting (Interior/Exterior)</li>
-      <li>Appliance Repair & Installation</li>
-      <li>Light Plumbing</li>
-      <li>Ventilation & Fan Installation</li>
-      <li>Furniture Assembly</li>
-      <li>Concrete & Tile Work</li>
-      <li>Seasonal Maintenance</li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Phone: +1 438 365 5756</p>
-    <p>Email: hybridheating38@gmail.com</p>
-    <form action="https://formspree.io/f/mwkgyjyo" method="POST">
-      <label>Name</label><input type="text" name="name" required>
-      <label>Phone</label><input type="text" name="phone" required>
-      <label>Type of Service</label><input type="text" name="service" required>
-      <label>Message</label><textarea name="message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <div id="lang-fr" class="lang-section">
-    <h2>À propos</h2>
-    <p>Services fiables dans Westmount, Centre-ville, Côte-des-Neiges et NDG. Ivan offre des réparations calmes et professionnelles.</p>
-    <h2>Services</h2>
-    <ul>
-      <li>Peinture (intérieure/extérieure)</li>
-      <li>Réparation et installation d'appareils</li>
-      <li>Petite plomberie</li>
-      <li>Installation de ventilation et de ventilateurs</li>
-      <li>Assemblage de meubles</li>
-      <li>Travaux de béton et de carrelage</li>
-      <li>Entretien saisonnier</li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Téléphone : +1 438 365 5756</p>
-    <p>Email : hybridheating38@gmail.com</p>
-  </div>
-
-  <div id="lang-ua" class="lang-section">
-    <h2>Про нас</h2>
-    <p>Надійні послуги майстра в районах Westmount, Downtown, Côte-des-Neiges та NDG. Іван виконує роботу спокійно та професійно.</p>
-    <h2>Послуги</h2>
-    <ul>
-      <li>Фарбування (всередині/зовні)</li>
-      <li>Ремонт та встановлення техніки</li>
-      <li>Легка сантехніка</li>
-      <li>Монтаж вентиляції та вентиляторів</li>
-      <li>Збірка меблів</li>
-      <li>Бетонні та плиткові роботи</li>
-      <li>Сезонне обслуговування</li>
-    </ul>
-    <h2>Контакти</h2>
-    <p>Телефон: +1 438 365 5756</p>
-    <p>Email: hybridheating38@gmail.com</p>
-  </div>
+  <section class="gallery">
+    <h2>Наші роботи</h2>
+    <div class="gallery-container" id="gallery"></div>
+  </section>
 
   <footer>
-    &copy; 2025 MultiFix Montreal. All rights reserved.
+    <p>Contact: hybridheating38@gmail.com | +1 (438) 365-5756</p>
   </footer>
+
+  <script src="js/gallery.js"></script>
 </body>
 </html>
