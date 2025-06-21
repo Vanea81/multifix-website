@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MultiFix Montreal – Handyman Services</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #2f4858; color: white; padding: 20px; text-align: center; }
+    .section { padding: 20px; max-width: 900px; margin: auto; }
+    .lang-tabs { text-align: center; margin: 20px 0; }
+    .lang-tabs button { margin: 0 5px; padding: 5px 10px; cursor: pointer; }
+    .hidden { display: none; }
+    footer { background: #f0f0f0; text-align: center; padding: 10px; }
+    form { margin-top: 20px; }
+    label { display: block; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    button[type="submit"] { background: #2f4858; color: white; padding: 10px 20px; margin-top: 10px; border: none; cursor: pointer; }
+  </style>
+  <script>
+    function showLang(lang) {
+      const langs = ['en', 'fr', 'ua'];
+      langs.forEach(l => {
+        document.getElementById(`lang-${l}`).classList.add('hidden');
+      });
+      document.getElementById(`lang-${lang}`).classList.remove('hidden');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>MultiFix Montreal</h1>
+    <p>Good work is done calmly</p>
+  </header>
+
+  <div class="lang-tabs">
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('fr')">Français</button>
+    <button onclick="showLang('ua')">Українська</button>
+  </div>
+
+  <div id="lang-en" class="section">
+    <h2>About</h2>
+    <p>Reliable handyman services in Westmount, Downtown, Côte-des-Neiges and NDG. Ivan offers calm, professional repairs for your home.</p>
+    <h2>Services</h2>
+    <ul>
+      <li>Painting (Interior/Exterior)</li>
+      <li>Appliance Repair & Installation</li>
+      <li>Light Plumbing</li>
+      <li>Ventilation & Fan Installation</li>
+      <li>Furniture Assembly</li>
+      <li>Concrete & Tile Work</li>
+      <li>Seasonal Maintenance</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Phone: +1 438 365 5756</p>
+    <p>Email: hybridheating38@gmail.com</p>
+
+    <form action="https://formspree.io/f/mwkgyjyo" method="POST">
+      <h3>Request a Service</h3>
+      <label for="name">Name</label>
+      <input type="text" name="name" required />
+      <label for="phone">Phone</label>
+      <input type="text" name="phone" required />
+      <label for="service">Type of Service</label>
+      <input type="text" name="service" required />
+      <label for="message">Message</label>
+      <textarea name="message" rows="4"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 MultiFix Montreal
+  </footer>
+</body>
+</html>
