@@ -8,16 +8,43 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f9f9f9;
         }
-        h1 {
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 0.5em;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
             color: #333;
+            text-align: center;
         }
         .gallery {
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
             gap: 20px;
+            margin-top: 20px;
         }
         .gallery-photo {
             width: 300px;
@@ -25,13 +52,34 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.2);
         }
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            margin-top: 40px;
+        }
     </style>
 </head>
 <body>
-    <h1>Gallery</h1>
-    <div class="gallery">
-        <img class="gallery-photo" src="images/gallery/whatsapp-image-2025-06-21-13-51-19.jpg" alt="MultiFix project photo 1" />
-        <img class="gallery-photo" src="images/gallery/WhatsApp Image 2025-06-21 at 13.52.00_aeabccd5.jpg" alt="MultiFix project photo 2" />
-    </div>
+    <header>
+        <h1>MultiFix</h1>
+    </header>
+    <nav>
+        <a href="index.html">Головна</a>
+        <a href="services.html">Послуги</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакти</a>
+    </nav>
+    <main>
+        <h2>Наші роботи</h2>
+        <div class="gallery">
+            <img class="gallery-photo" src="images/gallery/whatsapp-image-2025-06-21-13-51-19.jpg" alt="MultiFix project 1" />
+            <img class="gallery-photo" src="images/gallery/whatsapp-image-2025-06-21-13-52-00.jpg" alt="MultiFix project 2" />
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 MultiFix — Сервіс ремонту в Монреалі
+    </footer>
 </body>
 </html>
