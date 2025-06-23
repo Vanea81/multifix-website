@@ -6,7 +6,9 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_about: "About",
-    page_title: "Our Services",
+    home_title: "Reliable Home Repair Services in Montreal",
+    home_description: "We offer professional maintenance and repairs with attention to detail.",
+    services_title: "Our Services",
     service_painting: "Painting works",
     service_electric: "Light electrical repairs",
     service_appliances: "Appliance diagnostics and repair",
@@ -15,7 +17,14 @@ const translations = {
     service_ac: "Air conditioner repair and maintenance",
     service_plumbing: "Light plumbing",
     service_demolition: "Demolition and minor concrete works",
-    service_furniture: "Furniture assembly"
+    service_furniture: "Furniture assembly",
+    contact_title: "Contact Us",
+    contact_phone: "Phone",
+    contact_email: "Email",
+    contact_area: "Areas we serve",
+    about_title: "About MultiFix",
+    about_text: "We are a company in Montreal offering maintenance and repair services for apartments and buildings. We aim to deliver quality work with calm and professionalism.",
+    footer_text: "Home Repair Services in Montreal"
   },
   fr: {
     title: "MultiFix",
@@ -24,7 +33,9 @@ const translations = {
     nav_gallery: "Galerie",
     nav_contact: "Contact",
     nav_about: "À propos",
-    page_title: "Nos Services",
+    home_title: "Services de réparation fiables à Montréal",
+    home_description: "Nous offrons un entretien et des réparations professionnels avec le souci du détail.",
+    services_title: "Nos Services",
     service_painting: "Travaux de peinture",
     service_electric: "Réparations électriques légères",
     service_appliances: "Diagnostic et réparation d’appareils",
@@ -33,7 +44,14 @@ const translations = {
     service_ac: "Réparation et entretien de climatiseurs",
     service_plumbing: "Plomberie légère",
     service_demolition: "Travaux de démolition et de béton mineurs",
-    service_furniture: "Assemblage de meubles"
+    service_furniture: "Assemblage de meubles",
+    contact_title: "Contactez-nous",
+    contact_phone: "Téléphone",
+    contact_email: "Email",
+    contact_area: "Zones desservies",
+    about_title: "À propos de MultiFix",
+    about_text: "Nous sommes une entreprise à Montréal offrant des services d’entretien et de réparation pour appartements et immeubles. Nous visons un travail de qualité avec calme et professionnalisme.",
+    footer_text: "Services de réparation à Montréal"
   },
   uk: {
     title: "MultiFix",
@@ -42,7 +60,9 @@ const translations = {
     nav_gallery: "Галерея",
     nav_contact: "Контакти",
     nav_about: "Про нас",
-    page_title: "Наші послуги",
+    home_title: "Надійні послуги з ремонту в Монреалі",
+    home_description: "Пропонуємо професійне обслуговування та ремонт з увагою до деталей.",
+    services_title: "Наші послуги",
     service_painting: "Малярні роботи",
     service_electric: "Легка електрика",
     service_appliances: "Діагностика і ремонт побутової техніки",
@@ -50,8 +70,15 @@ const translations = {
     service_seasonal: "Сезонне обслуговування будинків",
     service_ac: "Ремонт і обслуговування кондиціонерів",
     service_plumbing: "Легка сантехніка",
-    service_demolition: "Демонтаж і дрібні бетонні роботи",
-    service_furniture: "Збірка меблів"
+    service_demolition: "Демонтаж і бетонні роботи",
+    service_furniture: "Збірка меблів",
+    contact_title: "Зв'яжіться з нами",
+    contact_phone: "Телефон",
+    contact_email: "Електронна пошта",
+    contact_area: "Райони обслуговування",
+    about_title: "Про MultiFix",
+    about_text: "Ми компанія в Монреалі, що надає послуги з обслуговування та ремонту квартир і будівель. Наша мета — якісна робота з спокоєм і професіоналізмом.",
+    footer_text: "Послуги ремонту в Монреалі"
   }
 };
 
