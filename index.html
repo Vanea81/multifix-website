@@ -1,30 +1,30 @@
 
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MultiFix</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/lang.js" defer></script>
+    <meta charset="UTF-8" />
+    <title id="title">MultiFix</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/lang.js"></script>
 </head>
 <body>
-<header>
-    <h1 data-title>Ласкаво просимо до MultiFix!</h1>
-    <div class="lang-switch">
-        <button onclick="setLanguage('uk')">🇺🇦</button>
-        <button onclick="setLanguage('fr')">🇫🇷</button>
-        <button onclick="setLanguage('en')">🇬🇧</button>
+    <header><h1 id="title">MultiFix</h1></header>
+    <nav>
+        <a href="index.html" id="welcome">Welcome to MultiFix!</a>
+        <a href="services.html" id="services">Services</a>
+        <a href="about.html" id="about">About Us</a>
+        <a href="gallery.html" id="gallery">Gallery</a>
+        <a href="contact.html" id="contact">Contact</a>
+    </nav>
+    <div class="language-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('uk')">UA</button>
     </div>
-</header>
-<nav>
-    <a href="index.html">🏠</a>
-    <a href="services.html" data-services>Послуги</a>
-    <a href="gallery.html" data-gallery>Галерея</a>
-    <a href="contact.html" data-contact>Контакти</a>
-    <a href="about.html" data-about-nav>Про нас</a>
-</nav>
-<main><p>Ваш надійний сервіс ремонту в Монреалі.</p></main>
-<footer>&copy; 2025 MultiFix</footer>
+    <main>
+        <h2 id="welcome">Welcome to MultiFix!</h2>
+        <p id="desc">We serve Westmount, Downtown, Côte-des-Neiges, NDG.</p>
+    </main>
+    <footer>&copy; 2025 MultiFix</footer>
 </body>
 </html>
