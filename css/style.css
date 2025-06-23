@@ -1,25 +1,24 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+  background: #f0f0f0;
 }
 header {
-  background-color: #007BFF;
+  background: #007BFF;
   color: white;
   padding: 1em;
   text-align: center;
 }
 nav {
-  background-color: #333;
+  background: #333;
   padding: 0.5em;
   text-align: center;
 }
 nav a {
   color: white;
-  margin: 0 10px;
+  margin: 0 15px;
   text-decoration: none;
-  font-weight: bold;
 }
 nav a:hover {
   text-decoration: underline;
@@ -27,26 +26,22 @@ nav a:hover {
 main {
   padding: 20px;
 }
-footer {
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 20px;
-}
-.lang-switch {
-  text-align: right;
-  padding: 0.5em 1em;
-}
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 20px;
+  justify-content: center;
 }
 .gallery-photo {
   width: 300px;
   height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+footer {
+  background: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
 }
