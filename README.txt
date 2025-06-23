@@ -1,1 +1,0 @@
-This is the new clean website structure for MultiFix.
