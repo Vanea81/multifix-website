@@ -1,42 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-en="MultiFix" data-ua="МультиФікс" data-fr="MultiFix">MultiFix</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1 data-en="MultiFix" data-ua="МультиФікс" data-fr="MultiFix">MultiFix</h1>
-    <div style="text-align: right; padding: 0 1rem;">
-      <a href="#" onclick="setLanguage('en')">EN</a> |
-      <a href="#" onclick="setLanguage('ua')">UA</a> |
-      <a href="#" onclick="setLanguage('fr')">FR</a>
+<header>
+    <h1 data-title>Ласкаво просимо до MultiFix!</h1>
+    <div class="lang-switch">
+        <button onclick="setLanguage('uk')">🇺🇦</button>
+        <button onclick="setLanguage('fr')">🇫🇷</button>
+        <button onclick="setLanguage('en')">🇬🇧</button>
     </div>
-  </header>
-  <nav>
-    <a href="index.html" data-en="Home" data-ua="Головна" data-fr="Accueil">Home</a>
-    <a href="services.html" data-en="Services" data-ua="Послуги" data-fr="Services">Services</a>
-    <a href="gallery.html" data-en="Gallery" data-ua="Галерея" data-fr="Galerie">Gallery</a>
-    <a href="contact.html" data-en="Contact" data-ua="Контакти" data-fr="Contact">Contact</a>
-  </nav>
-  <main>
-    
-<ul>
-  <li data-en="Painting" data-ua="Малярні роботи" data-fr="Peinture">Painting</li>
-  <li data-en="Light Electrical (switches, outlets)" data-ua="Легка електрика (вимикачі, розетки)" data-fr="Électricité légère (interrupteurs, prises)">Light Electrical</li>
-  <li data-en="Appliance Diagnostics & Repair" data-ua="Діагностика і ремонт побутової техніки" data-fr="Diagnostic et réparation d’appareils">Appliance Repair</li>
-  <li data-en="Fan & Hood Installation" data-ua="Монтаж витяжок, вентиляторів" data-fr="Installation de ventilateurs et hottes">Fan Installation</li>
-  <li data-en="Seasonal Home Maintenance" data-ua="Сезонне обслуговування будинків" data-fr="Entretien saisonnier des maisons">Seasonal Maintenance</li>
-  <li data-en="AC Repair & Maintenance" data-ua="Обслуговування кондиціонерів" data-fr="Entretien des climatiseurs">AC Maintenance</li>
-  <li data-en="Light Plumbing" data-ua="Легка сантехніка" data-fr="Plomberie légère">Light Plumbing</li>
-  <li data-en="Furniture Assembly" data-ua="Збірка меблів" data-fr="Assemblage de meubles">Furniture Assembly</li>
-  <li data-en="Minor Concrete Repairs" data-ua="Дрібні бетонні роботи" data-fr="Petits travaux de béton">Concrete Work</li>
-</ul>
-
-  </main>
-  <footer data-en="© 2025 MultiFix" data-ua="© 2025 МультиФікс" data-fr="© 2025 MultiFix">© 2025 MultiFix</footer>
-  <script src="js/script.js"></script>
+</header>
+<nav>
+    <a href="services.html">🏠</a>
+    <a href="services.html" data-services>Послуги</a>
+    <a href="gallery.html" data-gallery>Галерея</a>
+    <a href="contact.html" data-contact>Контакти</a>
+</nav>
+<footer>&copy; 2025 MultiFix</footer>
 </body>
 </html>

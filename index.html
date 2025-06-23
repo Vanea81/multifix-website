@@ -1,37 +1,28 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title data-en="MultiFix" data-ua="МультиФікс" data-fr="MultiFix">MultiFix</title>
-  <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiFix</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/lang.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1 data-en="MultiFix" data-ua="МультиФікс" data-fr="MultiFix">MultiFix</h1>
-    <div style="text-align: right; padding: 0 1rem;">
-      <a href="#" onclick="setLanguage('en')">EN</a> |
-      <a href="#" onclick="setLanguage('ua')">UA</a> |
-      <a href="#" onclick="setLanguage('fr')">FR</a>
+<header>
+    <h1 data-title>Ласкаво просимо до MultiFix!</h1>
+    <div class="lang-switch">
+        <button onclick="setLanguage('uk')">🇺🇦</button>
+        <button onclick="setLanguage('fr')">🇫🇷</button>
+        <button onclick="setLanguage('en')">🇬🇧</button>
     </div>
-  </header>
-  <nav>
-    <a href="index.html" data-en="Home" data-ua="Головна" data-fr="Accueil">Home</a>
-    <a href="services.html" data-en="Services" data-ua="Послуги" data-fr="Services">Services</a>
-    <a href="gallery.html" data-en="Gallery" data-ua="Галерея" data-fr="Galerie">Gallery</a>
-    <a href="contact.html" data-en="Contact" data-ua="Контакти" data-fr="Contact">Contact</a>
-  </nav>
-  <main>
-    
-<h2 data-en="Welcome to MultiFix!" data-ua="Ласкаво просимо в MultiFix!" data-fr="Bienvenue chez MultiFix!">Welcome to MultiFix!</h2>
-<p data-en="We serve Westmount, Downtown, Côte-des-Neiges, NDG."
-   data-ua="Обслуговуємо Вестмоунт, Центр, Кот-де-Неж, Нотр-Дам-де-Грас."
-   data-fr="Nous desservons Westmount, le Centre-ville, Côte-des-Neiges, NDG.">
-   We serve Westmount, Downtown, Côte-des-Neiges, NDG.
-</p>
-
-  </main>
-  <footer data-en="© 2025 MultiFix" data-ua="© 2025 МультиФікс" data-fr="© 2025 MultiFix">© 2025 MultiFix</footer>
-  <script src="js/script.js"></script>
+</header>
+<nav>
+    <a href="index.html">🏠</a>
+    <a href="services.html" data-services>Послуги</a>
+    <a href="gallery.html" data-gallery>Галерея</a>
+    <a href="contact.html" data-contact>Контакти</a>
+</nav>
+<footer>&copy; 2025 MultiFix</footer>
 </body>
 </html>
