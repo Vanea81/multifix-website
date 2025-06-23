@@ -8,13 +8,16 @@
 </head>
 <body>
   <header>
-    <h1 data-i18n="title">MultiFix</h1>
-    <div class="language-switch">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('fr')">FR</button>
-      <button onclick="setLanguage('uk')">UA</button>
+    <div class="top-bar">
+      <div class="language-switch">
+        <button onclick="setLanguage('en')">EN</button>
+        <button onclick="setLanguage('fr')">FR</button>
+        <button onclick="setLanguage('uk')">UA</button>
+      </div>
     </div>
+    <h1 data-i18n="title">MultiFix</h1>
   </header>
+
   <nav>
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
@@ -22,13 +25,20 @@
     <a href="contact.html" data-i18n="nav_contact">Contact</a>
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
+
   <main>
-    <h2 data-i18n="page_title">Page Content</h2>
-    <p data-i18n="page_description">This is a sample paragraph in English.</p>
+    <section class="intro">
+      <h2 data-i18n="page_title">Welcome to MultiFix!</h2>
+      <p data-i18n="page_description">
+        We provide professional repair and maintenance services in Westmount, Downtown, Côte-des-Neiges and Notre-Dame-de-Grâce.
+      </p>
+    </section>
   </main>
+
   <footer>
     &copy; 2025 MultiFix
   </footer>
+
   <script src="js/lang.js"></script>
 </body>
 </html>
