@@ -1,11 +1,10 @@
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
-header, footer {
+header {
   background-color: #007BFF;
   color: white;
   padding: 1em;
@@ -20,15 +19,26 @@ nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 nav a:hover {
   text-decoration: underline;
+}
+main {
+  padding: 20px;
+}
+footer {
+  background-color: #007BFF;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 40px;
 }
 .language-switch {
   margin-top: 10px;
 }
 .language-switch button {
   margin: 0 5px;
-  padding: 0.5em 1em;
+  padding: 5px 10px;
   cursor: pointer;
 }
