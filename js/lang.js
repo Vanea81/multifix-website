@@ -22,6 +22,7 @@ const translations = {
     contact_phone: "Phone",
     contact_email: "Email",
     contact_area: "Areas we serve",
+    motto: "Good work is done calmly.",
     about_title: "About MultiFix",
     about_text: "We are a company in Montreal offering maintenance and repair services for apartments and buildings. We aim to deliver quality work with calm and professionalism.",
     footer_text: "Home Repair Services in Montreal"
@@ -49,6 +50,7 @@ const translations = {
     contact_phone: "Téléphone",
     contact_email: "Email",
     contact_area: "Zones desservies",
+    motto: "De bons travaux se font calmement.",
     about_title: "À propos de MultiFix",
     about_text: "Nous sommes une entreprise à Montréal offrant des services d’entretien et de réparation pour appartements et immeubles. Nous visons un travail de qualité avec calme et professionnalisme.",
     footer_text: "Services de réparation à Montréal"
@@ -76,6 +78,7 @@ const translations = {
     contact_phone: "Телефон",
     contact_email: "Електронна пошта",
     contact_area: "Райони обслуговування",
+    motto: "Хороші роботи робляться спокійно.",
     about_title: "Про MultiFix",
     about_text: "Ми компанія в Монреалі, що надає послуги з обслуговування та ремонту квартир і будівель. Наша мета — якісна робота з спокоєм і професіоналізмом.",
     footer_text: "Послуги ремонту в Монреалі"
