@@ -2,18 +2,18 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background: #f0f0f0;
 }
-header {
-  background-color: #007BFF;
+header, footer {
+  background: #007BFF;
   color: white;
-  padding: 1em;
   text-align: center;
+  padding: 1em;
 }
 nav {
-  background-color: #333;
-  padding: 0.5em;
+  background: #333;
   text-align: center;
+  padding: 0.5em 0;
 }
 nav a {
   color: white;
@@ -21,24 +21,28 @@ nav a {
   text-decoration: none;
   font-weight: bold;
 }
-nav a:hover {
-  text-decoration: underline;
-}
-main {
-  padding: 20px;
-}
-footer {
-  background-color: #007BFF;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: 40px;
-}
 .language-switch {
   margin-top: 10px;
 }
 .language-switch button {
   margin: 0 5px;
   padding: 5px 10px;
-  cursor: pointer;
+  font-weight: bold;
+}
+main {
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+ul li::before {
+  content: "🔹";
+  position: absolute;
+  left: 0;
 }
