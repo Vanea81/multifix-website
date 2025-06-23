@@ -6,16 +6,11 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_about: "About",
-
-    page_title: "Welcome!",
-    page_description: "This is a sample paragraph in English.",
-
-    contact_title: "Contact Us",
-    phone_label: "Phone:",
-    service_area: "We serve Westmount, Downtown, Côte-des-Neiges, NDG.",
-    motto: "Good work is done calmly."
+    main_heading: "Welcome to MultiFix!",
+    main_intro: "We provide high-quality, honest maintenance and repair services in Montreal.",
+    main_zones: "Serving Westmount, Downtown, Côte-des-Neiges, NDG.",
+    main_motto: "Good work is done calmly."
   },
-
   fr: {
     title: "MultiFix",
     nav_home: "Accueil",
@@ -23,16 +18,11 @@ const translations = {
     nav_gallery: "Galerie",
     nav_contact: "Contact",
     nav_about: "À propos",
-
-    page_title: "Bienvenue!",
-    page_description: "Ceci est un paragraphe en français.",
-
-    contact_title: "Contactez-nous",
-    phone_label: "Téléphone:",
-    service_area: "Nous desservons Westmount, le Centre-ville, Côte-des-Neiges, NDG.",
-    motto: "De bons travaux se font calmement."
+    main_heading: "Bienvenue chez MultiFix!",
+    main_intro: "Nous fournissons des services de maintenance et de réparation honnêtes et de qualité à Montréal.",
+    main_zones: "Nous desservons Westmount, le centre-ville, Côte-des-Neiges, NDG.",
+    main_motto: "De bons travaux se font calmement."
   },
-
   uk: {
     title: "MultiFix",
     nav_home: "Головна",
@@ -40,14 +30,10 @@ const translations = {
     nav_gallery: "Галерея",
     nav_contact: "Контакти",
     nav_about: "Про нас",
-
-    page_title: "Вітаємо!",
-    page_description: "Це приклад тексту українською мовою.",
-
-    contact_title: "Зв’яжіться з нами",
-    phone_label: "Телефон:",
-    service_area: "Обслуговуємо Вестмаунт, Центр, Кот-де-Неж, Нотр-Дам-де-Грас.",
-    motto: "Хороші роботи робляться спокійно."
+    main_heading: "Ласкаво просимо до MultiFix!",
+    main_intro: "Ми надаємо якісні та чесні послуги з обслуговування і ремонту в Монреалі.",
+    main_zones: "Обслуговуємо райони Вестмаунт, Центр, Кот-де-Неж, Нотр-Дам-де-Грас.",
+    main_motto: "Хороші роботи робляться спокійно."
   }
 };
 
