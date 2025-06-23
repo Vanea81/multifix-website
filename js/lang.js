@@ -6,10 +6,16 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_about: "About",
-    main_heading: "Welcome to MultiFix!",
-    main_intro: "We provide high-quality, honest maintenance and repair services in Montreal.",
-    main_zones: "Serving Westmount, Downtown, Côte-des-Neiges, NDG.",
-    main_motto: "Good work is done calmly."
+    page_title: "Our Services",
+    service_painting: "Painting works",
+    service_electric: "Light electrical repairs",
+    service_appliances: "Appliance diagnostics and repair",
+    service_ventilation: "Fan and hood installation",
+    service_seasonal: "Seasonal home maintenance",
+    service_ac: "Air conditioner repair and maintenance",
+    service_plumbing: "Light plumbing",
+    service_demolition: "Demolition and minor concrete works",
+    service_furniture: "Furniture assembly"
   },
   fr: {
     title: "MultiFix",
@@ -18,10 +24,16 @@ const translations = {
     nav_gallery: "Galerie",
     nav_contact: "Contact",
     nav_about: "À propos",
-    main_heading: "Bienvenue chez MultiFix!",
-    main_intro: "Nous fournissons des services de maintenance et de réparation honnêtes et de qualité à Montréal.",
-    main_zones: "Nous desservons Westmount, le centre-ville, Côte-des-Neiges, NDG.",
-    main_motto: "De bons travaux se font calmement."
+    page_title: "Nos Services",
+    service_painting: "Travaux de peinture",
+    service_electric: "Réparations électriques légères",
+    service_appliances: "Diagnostic et réparation d’appareils",
+    service_ventilation: "Installation de hottes et ventilateurs",
+    service_seasonal: "Entretien saisonnier des maisons",
+    service_ac: "Réparation et entretien de climatiseurs",
+    service_plumbing: "Plomberie légère",
+    service_demolition: "Travaux de démolition et de béton mineurs",
+    service_furniture: "Assemblage de meubles"
   },
   uk: {
     title: "MultiFix",
@@ -30,10 +42,16 @@ const translations = {
     nav_gallery: "Галерея",
     nav_contact: "Контакти",
     nav_about: "Про нас",
-    main_heading: "Ласкаво просимо до MultiFix!",
-    main_intro: "Ми надаємо якісні та чесні послуги з обслуговування і ремонту в Монреалі.",
-    main_zones: "Обслуговуємо райони Вестмаунт, Центр, Кот-де-Неж, Нотр-Дам-де-Грас.",
-    main_motto: "Хороші роботи робляться спокійно."
+    page_title: "Наші послуги",
+    service_painting: "Малярні роботи",
+    service_electric: "Легка електрика",
+    service_appliances: "Діагностика і ремонт побутової техніки",
+    service_ventilation: "Монтаж витяжок і вентиляторів",
+    service_seasonal: "Сезонне обслуговування будинків",
+    service_ac: "Ремонт і обслуговування кондиціонерів",
+    service_plumbing: "Легка сантехніка",
+    service_demolition: "Демонтаж і дрібні бетонні роботи",
+    service_furniture: "Збірка меблів"
   }
 };
 
