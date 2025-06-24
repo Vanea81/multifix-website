@@ -1,4 +1,3 @@
-
 const translations = {
   en: {
     title: "MultiFix",
@@ -7,11 +6,8 @@ const translations = {
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_about: "About",
-    contact_title: "Contact Us",
-    contact_phone_full: "Phone: +1 438 365 5756",
-    contact_email_full: "Email: hybridheating38@gmail.com",
-    contact_area: "We serve Westmount, Downtown, Côte-des-Neiges, NDG.",
-    motto: "Good work is done calmly.",
+    home_title: "Reliable Home Repair Services in Montreal",
+    home_description: "We offer professional maintenance and repairs with attention to detail.",
     footer_text: "Home Repair Services in Montreal"
   },
   fr: {
@@ -21,11 +17,8 @@ const translations = {
     nav_gallery: "Galerie",
     nav_contact: "Contact",
     nav_about: "À propos",
-    contact_title: "Contactez-nous",
-    contact_phone_full: "Téléphone : +1 438 365 5756",
-    contact_email_full: "Email : hybridheating38@gmail.com",
-    contact_area: "Nous desservons Westmount, Centre-ville, Côte-des-Neiges, NDG.",
-    motto: "De bons travaux se font calmement.",
+    home_title: "Services de réparation fiables à Montréal",
+    home_description: "Nous offrons un entretien et des réparations professionnels avec le souci du détail.",
     footer_text: "Services de réparation à Montréal"
   },
   uk: {
@@ -35,11 +28,8 @@ const translations = {
     nav_gallery: "Галерея",
     nav_contact: "Контакти",
     nav_about: "Про нас",
-    contact_title: "Зв'яжіться з нами",
-    contact_phone_full: "Телефон: +1 438 365 5756",
-    contact_email_full: "Електронна пошта: hybridheating38@gmail.com",
-    contact_area: "Ми обслуговуємо Вестмаунт, Центр міста, Кот-де-Неж, Нотр-Дам-де-Грас.",
-    motto: "Хороші роботи робляться спокійно.",
+    home_title: "Надійні послуги з ремонту в Монреалі",
+    home_description: "Пропонуємо професійне обслуговування та ремонт з увагою до деталей.",
     footer_text: "Послуги ремонту в Монреалі"
   }
 };
