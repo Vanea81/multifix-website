@@ -1,4 +1,3 @@
-
 const translations = {
   en: {
     title: "MultiFix",
@@ -24,7 +23,9 @@ const translations = {
     contact_email_full: "Email: hybridheating38@gmail.com",
     contact_area: "We serve Westmount, Downtown, Côte-des-Neiges, NDG.",
     motto: "Good work is done calmly.",
-    footer_text: "Home Repair Services in Montreal"
+    footer_text: "Home Repair Services in Montreal",
+    about_title: "About MultiFix",
+    about_text: "MultiFix is a Montreal-based company that specializes in apartment and building maintenance. Our mission is to provide high-quality repair services with calm professionalism. We serve our clients with care, experience, and dedication — because good work is done calmly."
   },
   fr: {
     title: "MultiFix",
@@ -50,7 +51,9 @@ const translations = {
     contact_email_full: "Email : hybridheating38@gmail.com",
     contact_area: "Nous desservons Westmount, Centre-ville, Côte-des-Neiges, NDG.",
     motto: "De bons travaux se font calmement.",
-    footer_text: "Services de réparation à Montréal"
+    footer_text: "Services de réparation à Montréal",
+    about_title: "À propos de MultiFix",
+    about_text: "MultiFix est une entreprise située à Montréal spécialisée dans l'entretien des appartements et des bâtiments. Notre mission est de fournir des services de réparation de haute qualité avec professionnalisme et calme."
   },
   uk: {
     title: "MultiFix",
@@ -76,7 +79,9 @@ const translations = {
     contact_email_full: "Електронна пошта: hybridheating38@gmail.com",
     contact_area: "Ми обслуговуємо Вестмаунт, Центр міста, Кот-де-Неж, Нотр-Дам-де-Грас.",
     motto: "Хороші роботи робляться спокійно.",
-    footer_text: "Послуги ремонту в Монреалі"
+    footer_text: "Послуги ремонту в Монреалі",
+    about_title: "Про MultiFix",
+    about_text: "MultiFix — компанія з Монреаля, що спеціалізується на обслуговуванні квартир і будівель. Наша місія — надання якісних ремонтних послуг зі спокоєм і професіоналізмом. Ми працюємо з турботою, досвідом і відданістю — бо хороша робота робиться спокійно."
   }
 };
 
