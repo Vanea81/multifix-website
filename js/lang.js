@@ -1,3 +1,4 @@
+
 const translations = {
   en: {
     title: "MultiFix",
@@ -18,6 +19,11 @@ const translations = {
     service_plumbing: "Light plumbing",
     service_demolition: "Demolition and minor concrete works",
     service_furniture: "Furniture assembly",
+    contact_title: "Contact Us",
+    contact_phone_full: "Phone: +1 438 365 5756",
+    contact_email_full: "Email: hybridheating38@gmail.com",
+    contact_area: "We serve Westmount, Downtown, Côte-des-Neiges, NDG.",
+    motto: "Good work is done calmly.",
     footer_text: "Home Repair Services in Montreal"
   },
   fr: {
@@ -39,6 +45,11 @@ const translations = {
     service_plumbing: "Plomberie légère",
     service_demolition: "Travaux de démolition et de béton mineurs",
     service_furniture: "Assemblage de meubles",
+    contact_title: "Contactez-nous",
+    contact_phone_full: "Téléphone : +1 438 365 5756",
+    contact_email_full: "Email : hybridheating38@gmail.com",
+    contact_area: "Nous desservons Westmount, Centre-ville, Côte-des-Neiges, NDG.",
+    motto: "De bons travaux se font calmement.",
     footer_text: "Services de réparation à Montréal"
   },
   uk: {
@@ -60,6 +71,11 @@ const translations = {
     service_plumbing: "Легка сантехніка",
     service_demolition: "Демонтаж і бетонні роботи",
     service_furniture: "Збірка меблів",
+    contact_title: "Зв'яжіться з нами",
+    contact_phone_full: "Телефон: +1 438 365 5756",
+    contact_email_full: "Електронна пошта: hybridheating38@gmail.com",
+    contact_area: "Ми обслуговуємо Вестмаунт, Центр міста, Кот-де-Неж, Нотр-Дам-де-Грас.",
+    motto: "Хороші роботи робляться спокійно.",
     footer_text: "Послуги ремонту в Монреалі"
   }
 };
