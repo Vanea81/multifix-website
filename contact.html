@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MultiFix - Contact</title>
+
+  <!-- SEO -->
+  <title>Contact MultiFix | Service Calls in Montreal</title>
+  <meta name="description" content="Contact MultiFix Montreal to request a service call. Rental property maintenance and handyman services in Montreal, Laval and the South Shore." />
+  <link rel="canonical" href="https://multifixmontreal.ca/contact.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MultiFix" />
+  <meta property="og:title" content="Contact MultiFix | Service Calls in Montreal" />
+  <meta property="og:description" content="Request a service call for Montreal, Laval and the South Shore." />
+  <meta property="og:url" content="https://multifixmontreal.ca/contact.html" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
-    <div class="language-switch">
+
+    <div class="language-switch" aria-label="Language switch">
       <button type="button" onclick="setLanguage('en')">EN</button>
       <button type="button" onclick="setLanguage('fr')">FR</button>
       <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+
     <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
@@ -26,95 +43,111 @@
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
 
-  <main>
+  <main id="main">
     <section class="section">
-  <h2 data-i18n="contact_title">Contact</h2>
-  <p data-i18n="contact_phone_full">Phone: +1 438 365 5756</p>
-  <p data-i18n="contact_email_full">Email: hybridheating38@gmail.com</p>
-  <p class="small" data-i18n="contact_area">Service area: Montreal and nearby.</p>
-  <p class="small" data-i18n="motto">Good work is done calmly.</p>
-</section>
+      <h2 data-i18n="contact_title">Contact</h2>
 
-<section class="section" id="request">
-  <h2 data-i18n="form_title">Request a service call</h2>
+      <!-- Краще зробити клікабельним -->
+      <p>
+        <span data-i18n="contact_phone_full">Phone: +1 438 365 5756</span>
+        <br />
+        <a href="tel:+14383655756" class="small">Call: +1 438 365 5756</a>
+      </p>
 
-  <!-- MVP без бекенду:
-       1) mailto відкриє поштовий клієнт (найпростіше).
-       2) Якщо захочеш "реальну" форму без бекенду — можеш замінити action на FormSubmit/Netlify Forms.
-  -->
-  <form action="mailto:hybridheating38@gmail.com" method="post" enctype="text/plain">
-    <div class="form-row two">
-      <div>
-        <label for="name" data-i18n="form_name">Name</label>
-        <input id="name" name="name" type="text" required data-i18n-placeholder="form_name" placeholder="Name"/>
-      </div>
-      <div>
-        <label for="phone" data-i18n="form_phone">Phone</label>
-        <input id="phone" name="phone" type="tel" required data-i18n-placeholder="form_phone" placeholder="Phone"/>
-      </div>
-    </div>
+      <p>
+        <span data-i18n="contact_email_full">Email: hybridheating38@gmail.com</span>
+        <br />
+        <a href="mailto:hybridheating38@gmail.com" class="small">hybridheating38@gmail.com</a>
+      </p>
 
-    <div class="form-row two" style="margin-top: 10px;">
-      <div>
-        <label for="email" data-i18n="form_email">Email</label>
-        <input id="email" name="email" type="email" data-i18n-placeholder="form_email" placeholder="Email"/>
-      </div>
-      <div>
-        <label for="property" data-i18n="form_property_type">Property type</label>
-        <select id="property" name="property_type">
-          <option value="house" data-i18n="opt_house">House</option>
-          <option value="condo" data-i18n="opt_condo">Condo</option>
-          <option value="plex" data-i18n="opt_plex">Plex / small building</option>
-          <option value="other" data-i18n="opt_other">Other</option>
-        </select>
-      </div>
-    </div>
+      <p class="small" data-i18n="contact_area">Service area: Montreal and nearby.</p>
+      <p class="small" data-i18n="motto">Good work is done calmly.</p>
+    </section>
 
-    <div class="form-row three" style="margin-top: 10px;">
-      <div>
-        <label for="units" data-i18n="form_units">Number of units (if applicable)</label>
-        <input id="units" name="units" type="text" data-i18n-placeholder="form_units" placeholder="Number of units"/>
-      </div>
-      <div>
-        <label for="area" data-i18n="form_area">Area</label>
-        <select id="area" name="area">
-          <option value="montreal" data-i18n="opt_area_mtl">Montreal</option>
-          <option value="laval" data-i18n="opt_area_laval">Laval</option>
-          <option value="southshore" data-i18n="opt_area_south">South Shore</option>
-          <option value="other" data-i18n="opt_area_other">Other</option>
-        </select>
-      </div>
-      <div>
-        <label for="urgency" data-i18n="form_urgency">Urgency</label>
-        <select id="urgency" name="urgency">
-          <option value="today" data-i18n="opt_urg_today">Today</option>
-          <option value="week" data-i18n="opt_urg_week">This week</option>
-          <option value="flex" data-i18n="opt_urg_flex">Flexible</option>
-        </select>
-      </div>
-    </div>
+    <section class="section" id="request">
+      <h2 data-i18n="form_title">Request a service call</h2>
 
-    <div style="margin-top: 10px;">
-      <label for="issue" data-i18n="form_issue">What’s the issue?</label>
-      <textarea id="issue" name="issue" required data-i18n-placeholder="form_issue" placeholder="What’s the issue?"></textarea>
-    </div>
+      <!-- MVP (mailto). Працює лише якщо на ПК налаштований поштовий клієнт -->
+      <form
+        action="mailto:hybridheating38@gmail.com?subject=MultiFix%20Service%20Request"
+        method="post"
+        enctype="text/plain"
+      >
+        <div class="form-row two">
+          <div>
+            <label for="name" data-i18n="form_name">Name</label>
+            <input id="name" name="name" type="text" required data-i18n-placeholder="form_name" placeholder="Name"/>
+          </div>
+          <div>
+            <label for="phone" data-i18n="form_phone">Phone</label>
+            <input id="phone" name="phone" type="tel" required data-i18n-placeholder="form_phone" placeholder="Phone"/>
+          </div>
+        </div>
 
-    <div style="margin-top: 12px;">
-      <input class="btn" type="submit" data-i18n-value="form_submit" value="Send request"/>
-    </div>
-  </form>
+        <div class="form-row two" style="margin-top: 10px;">
+          <div>
+            <label for="email" data-i18n="form_email">Email</label>
+            <input id="email" name="email" type="email" data-i18n-placeholder="form_email" placeholder="Email"/>
+          </div>
+          <div>
+            <label for="property" data-i18n="form_property_type">Property type</label>
+            <select id="property" name="property_type">
+              <option value="house" data-i18n="opt_house">House</option>
+              <option value="condo" data-i18n="opt_condo">Condo</option>
+              <option value="plex" data-i18n="opt_plex">Plex / small building</option>
+              <option value="other" data-i18n="opt_other">Other</option>
+            </select>
+          </div>
+        </div>
 
-  <p class="small" style="margin-top: 10px;">
-    Tip: add photos in your email reply if that helps describe the issue.
-  </p>
-</section>
+        <div class="form-row three" style="margin-top: 10px;">
+          <div>
+            <label for="units" data-i18n="form_units">Number of units (if applicable)</label>
+            <input id="units" name="units" type="text" data-i18n-placeholder="form_units" placeholder="Number of units"/>
+          </div>
+          <div>
+            <label for="area" data-i18n="form_area">Area</label>
+            <select id="area" name="area">
+              <option value="montreal" data-i18n="opt_area_mtl">Montreal</option>
+              <option value="laval" data-i18n="opt_area_laval">Laval</option>
+              <option value="southshore" data-i18n="opt_area_south">South Shore</option>
+              <option value="other" data-i18n="opt_area_other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="urgency" data-i18n="form_urgency">Urgency</label>
+            <select id="urgency" name="urgency">
+              <option value="today" data-i18n="opt_urg_today">Today</option>
+              <option value="week" data-i18n="opt_urg_week">This week</option>
+              <option value="flex" data-i18n="opt_urg_flex">Flexible</option>
+            </select>
+          </div>
+        </div>
 
+        <div style="margin-top: 10px;">
+          <label for="issue" data-i18n="form_issue">What’s the issue?</label>
+          <textarea id="issue" name="issue" required data-i18n-placeholder="form_issue" placeholder="What’s the issue?"></textarea>
+        </div>
+
+        <div style="margin-top: 12px;">
+          <input class="btn" type="submit" data-i18n-value="form_submit" value="Send request"/>
+        </div>
+      </form>
+
+      <p class="small" style="margin-top: 10px;" data-i18n="contact_tip_photos">
+        Tip: add photos in your email reply if that helps describe the issue.
+      </p>
+
+      <p class="small" style="margin-top: 6px;" data-i18n="contact_tip_mailto">
+        If the form doesn’t open your email app, just send a message to the email above.
+      </p>
+    </section>
   </main>
 
   <footer>
     © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
   </footer>
 
-  <script src="js/lang.js"></script>
+  <script src="js/lang.js" defer></script>
 </body>
 </html>
