@@ -50,6 +50,23 @@ const translations = {
     service_demolition: "Minor demolition / small concrete tasks (case by case)",
     service_furniture: "Furniture assembly and small adjustments",
 
+    // NEW (services page extra blocks)
+    services_how_title: "How service calls work",
+    services_how_1: "You send the request (form / text / email) + photos if possible.",
+    services_how_2: "I confirm schedule. If it’s bigger than a quick fix, I provide an estimate.",
+    services_how_3: "I complete the work, keep the area clean, and report back (photos if helpful).",
+
+    services_fit_title: "Good fit for",
+    services_fit_1: "Plex & small buildings (2–20 units)",
+    services_fit_2: "Rental turnovers (small fixes between tenants)",
+    services_fit_3: "Preventive maintenance to reduce repeated issues",
+
+    services_exclude_title: "Not included (separate quote)",
+    services_exclude_1: "Major renovations, structural work, full rewiring or re-piping",
+    services_exclude_2: "Work requiring specialized licensed trades beyond safe scope",
+    services_exclude_note:
+      "For bigger jobs, I can assess the issue and provide a clear quote (or coordinate with the right specialist).",
+
     gallery_title: "Work Gallery",
     gallery_note: "Add 2–6 photos that show clean results and details (before/after if possible).",
 
@@ -148,6 +165,23 @@ const translations = {
     service_plumbing: "Plomberie de base (fuites, robinets, siphons, toilettes, cartouches)",
     service_demolition: "Petite démolition / petits travaux de béton (au cas par cas)",
     service_furniture: "Assemblage de meubles et ajustements",
+
+    // NEW (services page extra blocks)
+    services_how_title: "Comment se déroule une intervention",
+    services_how_1: "Vous envoyez la demande (formulaire / texto / courriel) + photos si possible.",
+    services_how_2: "Je confirme l’horaire. Si c’est plus qu’une petite réparation, je fais une estimation.",
+    services_how_3: "Je réalise le travail, je laisse un espace propre, et je vous fais un retour (photos si utile).",
+
+    services_fit_title: "Idéal pour",
+    services_fit_1: "Plex & petits immeubles (2 à 20 logements)",
+    services_fit_2: "Rotation locative (petites réparations entre locataires)",
+    services_fit_3: "Entretien préventif pour réduire les problèmes récurrents",
+
+    services_exclude_title: "Non inclus (devis séparé)",
+    services_exclude_1: "Rénovations majeures, structure, câblage complet, plomberie complète",
+    services_exclude_2: "Travaux nécessitant des corps de métier spécialisés hors périmètre",
+    services_exclude_note:
+      "Pour les gros travaux, je peux diagnostiquer et proposer un devis clair (ou coordonner avec le bon spécialiste).",
 
     gallery_title: "Galerie",
     gallery_note: "Ajoutez 2–6 photos (avant/après si possible) pour montrer un travail propre.",
@@ -248,6 +282,23 @@ const translations = {
     service_demolition: "Невеликий демонтаж / дрібні бетонні роботи (за домовленістю)",
     service_furniture: "Збірка меблів і дрібні регулювання",
 
+    // NEW (services page extra blocks)
+    services_how_title: "Як відбувається виклик",
+    services_how_1: "Ви надсилаєте запит (форма / смс / email) + фото, якщо можливо.",
+    services_how_2: "Я підтверджую час. Якщо це більше, ніж “дрібний фікс” — роблю оцінку.",
+    services_how_3: "Виконую роботу, залишаю чисто і даю зворотний зв’язок (за потреби з фото).",
+
+    services_fit_title: "Добре підходить для",
+    services_fit_1: "Plex та невеликі будинки (2–20 квартир)",
+    services_fit_2: "Заміна орендарів (дрібні роботи між заселенням)",
+    services_fit_3: "Профілактика, щоб не було постійних повторів",
+
+    services_exclude_title: "Не входить (окремий кошторис)",
+    services_exclude_1: "Великі ремонти, структура, повна заміна електрики або труб",
+    services_exclude_2: "Роботи, які потребують вузьких ліцензій поза безпечним обсягом",
+    services_exclude_note:
+      "Для більших робіт можу оглянути, пояснити варіанти і зробити чіткий кошторис (або скоординувати зі спеціалістом).",
+
     gallery_title: "Галерея робіт",
     gallery_note: "Додайте 2–6 фото, де видно акуратність (до/після — ідеально).",
 
@@ -297,38 +348,73 @@ const translations = {
   }
 };
 
-function setLanguage(lang) {
-  localStorage.setItem("lang", lang);
-  applyTranslations(lang);
+// ---------- helpers ----------
+function safeGetStoredLang() {
+  try {
+    return localStorage.getItem("lang");
+  } catch (_) {
+    return null;
+  }
+}
+
+function safeSetStoredLang(lang) {
+  try {
+    localStorage.setItem("lang", lang);
+  } catch (_) {}
+}
+
+function t(lang, key) {
+  if (translations[lang] && translations[lang][key] !== undefined) return translations[lang][key];
+  if (translations.en && translations.en[key] !== undefined) return translations.en[key];
+  return undefined;
+}
+
+function updateLangButtons(lang) {
+  const map = { en: "EN", fr: "FR", uk: "UA" };
+  const activeLabel = map[lang];
+
+  document.querySelectorAll(".language-switch button").forEach(btn => {
+    const label = (btn.textContent || "").trim().toUpperCase();
+    const isActive = label === activeLabel;
+    btn.classList.toggle("active", isActive);
+    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
+  });
 }
 
 function applyTranslations(lang) {
+  // set <html lang="">
+  document.documentElement.setAttribute("lang", lang);
+
   // text nodes
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.textContent = translations[lang][key];
-    }
+    const val = t(lang, key);
+    if (val !== undefined) el.textContent = val;
   });
 
   // placeholders
   document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
     const key = el.getAttribute("data-i18n-placeholder");
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.setAttribute("placeholder", translations[lang][key]);
-    }
+    const val = t(lang, key);
+    if (val !== undefined) el.setAttribute("placeholder", val);
   });
 
   // values (e.g., input type=submit)
   document.querySelectorAll("[data-i18n-value]").forEach(el => {
     const key = el.getAttribute("data-i18n-value");
-    if (translations[lang] && translations[lang][key] !== undefined) {
-      el.value = translations[lang][key];
-    }
+    const val = t(lang, key);
+    if (val !== undefined) el.value = val;
   });
+
+  updateLangButtons(lang);
+}
+
+function setLanguage(lang) {
+  safeSetStoredLang(lang);
+  applyTranslations(lang);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const lang = localStorage.getItem("lang") || "en";
+  const lang = safeGetStoredLang() || "en";
   applyTranslations(lang);
 });
