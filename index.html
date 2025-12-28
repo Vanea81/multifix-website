@@ -1,35 +1,66 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>MultiFix</title>
-<link href="css/style.css" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MultiFix</title>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
-<header>
-<h1 data-i18n="title">MultiFix</h1>
-<div class="language-switch">
-<button onclick="setLanguage('en')">EN</button>
-<button onclick="setLanguage('fr')">FR</button>
-<button onclick="setLanguage('uk')">UA</button>
+  <header>
+    <h1 data-i18n="title">MultiFix</h1>
+    <div class="language-switch">
+      <button type="button" onclick="setLanguage('en')">EN</button>
+      <button type="button" onclick="setLanguage('fr')">FR</button>
+      <button type="button" onclick="setLanguage('uk')">UA</button>
+    </div>
+    <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
+  </header>
+
+  <nav>
+    <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
+    <a href="services.html" data-i18n="nav_services">Services</a>
+    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
+    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    <a href="about.html" data-i18n="nav_about">About</a>
+  </nav>
+
+  <main>
+    <div class="grid">
+  <section class="section">
+    <h2 data-i18n="home_title">Rental property maintenance & repairs — one trusted technician</h2>
+    <p data-i18n="home_description">
+      For plex and small buildings (2–20 units): I handle tenant requests, small repairs, installs, and preventive maintenance — so you don’t have to chase contractors.
+    </p>
+    <div class="kv" style="margin-top: 10px;">
+      <span data-i18n="home_trust_1">Real building maintenance experience</span>
+      <span data-i18n="home_trust_2">Calm, professional work</span>
+      <span data-i18n="home_trust_3">Root-cause approach</span>
+    </div>
+    <div style="margin-top: 14px;">
+      <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+      <a class="btn secondary" href="owners.html" style="margin-left: 10px;" data-i18n="home_cta_secondary">See how it works</a>
+    </div>
+  </section>
+
+  <aside class="section">
+    <h3 data-i18n="home_trust_title">Why owners choose MultiFix</h3>
+    <ul class="list-clean">
+      <li data-i18n="home_trust_1">Real building maintenance experience</li>
+      <li data-i18n="home_trust_2">Calm, professional work</li>
+      <li data-i18n="home_trust_3">Root-cause approach</li>
+    </ul>
+    <p class="small" style="margin-top: 10px;" data-i18n="motto">Good work is done calmly.</p>
+  </aside>
 </div>
-</header>
-<nav>
-<a data-i18n="nav_home" href="index.html">Home</a>
-<a data-i18n="nav_services" href="services.html">Services</a>
-<a data-i18n="nav_gallery" href="gallery.html">Gallery</a>
-<a data-i18n="nav_contact" href="contact.html">Contact</a>
-<a data-i18n="nav_about" href="about.html">About</a>
-</nav>
-<main>
-<h2 data-i18n="home_title">Reliable and Professional Home Repair Services in Montreal</h2>
-<p data-i18n="home_description">At MultiFix Montreal, we specialize in detailed repair and maintenance work. From painting and light plumbing to appliance installation, we ensure your space is safe, functional, and beautiful.</p>
-</main>
-<footer>
-    © 2025 MultiFix — <span data-i18n="footer_text">Home Repair Services in Montreal</span>
-</footer>
-<script src="js/lang.js"></script>
+
+  </main>
+
+  <footer>
+    © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
+  </footer>
+
+  <script src="js/lang.js"></script>
 </body>
 </html>

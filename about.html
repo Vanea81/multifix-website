@@ -3,34 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MultiFix</title>
+  <title>MultiFix - About</title>
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
     <div class="language-switch">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('fr')">FR</button>
-      <button onclick="setLanguage('uk')">UA</button>
+      <button type="button" onclick="setLanguage('en')">EN</button>
+      <button type="button" onclick="setLanguage('fr')">FR</button>
+      <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+    <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
+
   <nav>
     <a href="index.html" data-i18n="nav_home">Home</a>
+    <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
     <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
     <a href="contact.html" data-i18n="nav_contact">Contact</a>
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
+
   <main>
-    <h2 data-i18n="about_title">About MultiFix</h2>
-    <p data-i18n="about_text">
-      MultiFix is a Montreal-based company that specializes in apartment and building maintenance. Our mission is to provide high-quality repair services with calm professionalism. We serve our clients with care, experience, and dedication — because good work is done calmly.
-    </p>
+    <section class="section">
+  <h2 data-i18n="about_title">About MultiFix</h2>
+  <p data-i18n="about_text_1">...</p>
+  <p data-i18n="about_text_2">...</p>
+
+  <h3 style="margin-top: 14px;" data-i18n="about_values_title">What you can expect</h3>
+  <ul class="list-clean">
+    <li data-i18n="about_value_1">Clear communication</li>
+    <li data-i18n="about_value_2">Clean worksite</li>
+    <li data-i18n="about_value_3">Reliable follow-up</li>
+    <li data-i18n="about_value_4">Respect for tenants & property</li>
+  </ul>
+
+  <div style="margin-top: 14px;">
+    <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+  </div>
+</section>
+
   </main>
+
   <footer>
-    &copy; 2025 MultiFix
+    © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
   </footer>
+
   <script src="js/lang.js"></script>
 </body>
 </html>
