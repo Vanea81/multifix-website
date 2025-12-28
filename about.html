@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MultiFix - About</title>
+
+  <!-- SEO -->
+  <title>About MultiFix | Rental Property Maintenance in Montreal</title>
+  <meta name="description" content="Learn about MultiFix Montreal — calm, professional rental property maintenance and handyman services for Montreal, Laval and the South Shore." />
+  <link rel="canonical" href="https://multifixmontreal.ca/about.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social (OG/Twitter) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MultiFix" />
+  <meta property="og:title" content="About MultiFix | Rental Property Maintenance in Montreal" />
+  <meta property="og:description" content="Learn about MultiFix Montreal — calm, professional rental property maintenance and handyman services for Montreal, Laval and the South Shore." />
+  <meta property="og:url" content="https://multifixmontreal.ca/about.html" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
-    <div class="language-switch">
+
+    <div class="language-switch" aria-label="Language switch">
       <button type="button" onclick="setLanguage('en')">EN</button>
       <button type="button" onclick="setLanguage('fr')">FR</button>
       <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+
     <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
@@ -26,31 +43,30 @@
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
 
-  <main>
+  <main id="main">
     <section class="section">
-  <h2 data-i18n="about_title">About MultiFix</h2>
-  <p data-i18n="about_text_1">...</p>
-  <p data-i18n="about_text_2">...</p>
+      <h2 data-i18n="about_title">About MultiFix</h2>
+      <p data-i18n="about_text_1">...</p>
+      <p data-i18n="about_text_2">...</p>
 
-  <h3 style="margin-top: 14px;" data-i18n="about_values_title">What you can expect</h3>
-  <ul class="list-clean">
-    <li data-i18n="about_value_1">Clear communication</li>
-    <li data-i18n="about_value_2">Clean worksite</li>
-    <li data-i18n="about_value_3">Reliable follow-up</li>
-    <li data-i18n="about_value_4">Respect for tenants & property</li>
-  </ul>
+      <h3 style="margin-top: 14px;" data-i18n="about_values_title">What you can expect</h3>
+      <ul class="list-clean">
+        <li data-i18n="about_value_1">Clear communication</li>
+        <li data-i18n="about_value_2">Clean worksite</li>
+        <li data-i18n="about_value_3">Reliable follow-up</li>
+        <li data-i18n="about_value_4">Respect for tenants &amp; property</li>
+      </ul>
 
-  <div style="margin-top: 14px;">
-    <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
-  </div>
-</section>
-
+      <div style="margin-top: 14px;">
+        <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+      </div>
+    </section>
   </main>
 
   <footer>
     © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
   </footer>
 
-  <script src="js/lang.js"></script>
+  <script src="js/lang.js" defer></script>
 </body>
 </html>
