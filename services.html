@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MultiFix - Services</title>
+
+  <!-- SEO -->
+  <title>Services | MultiFix Montreal — Maintenance & Repairs</title>
+  <meta name="description" content="Maintenance and repair services for rental properties and small buildings in Montreal, Laval and the South Shore. Plumbing, electrical, drywall, appliances, ventilation, AC and preventive checks." />
+  <link rel="canonical" href="https://multifixmontreal.ca/services.html" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MultiFix" />
+  <meta property="og:title" content="Services | MultiFix Montreal — Maintenance & Repairs" />
+  <meta property="og:description" content="Rental property maintenance and repairs: plumbing, electrical, drywall, appliances, ventilation, AC and preventive checks." />
+  <meta property="og:url" content="https://multifixmontreal.ca/services.html" />
+  <meta name="twitter:card" content="summary" />
+
   <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
-    <div class="language-switch">
+
+    <div class="language-switch" aria-label="Language switch">
       <button type="button" onclick="setLanguage('en')">EN</button>
       <button type="button" onclick="setLanguage('fr')">FR</button>
       <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+
     <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
@@ -26,32 +43,56 @@
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
 
-  <main>
+  <main id="main">
     <section class="section">
-  <h2 data-i18n="services_title">Maintenance & repair services</h2>
-  <p class="small" data-i18n="services_note">Focus: rental properties and small buildings...</p>
-  <ul class="list-clean">
-    <li data-i18n="service_painting">Drywall & paint touch-ups</li>
-    <li data-i18n="service_plumbing">Basic plumbing</li>
-    <li data-i18n="service_electric">Basic electrical repairs</li>
-    <li data-i18n="service_appliances">Appliance install / replacement</li>
-    <li data-i18n="service_ventilation">Fan and hood installation</li>
-    <li data-i18n="service_ac">Air conditioner maintenance</li>
-    <li data-i18n="service_seasonal">Seasonal maintenance checks</li>
-    <li data-i18n="service_furniture">Furniture assembly</li>
-    <li data-i18n="service_demolition">Minor demolition / small concrete</li>
-  </ul>
-  <div style="margin-top: 14px;">
-    <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
-  </div>
-</section>
+      <h2 data-i18n="services_title">Maintenance & repair services</h2>
+      <p class="small" data-i18n="services_note">Focus: rental properties and small buildings...</p>
 
+      <ul class="list-clean">
+        <li data-i18n="service_painting">Drywall & paint touch-ups</li>
+        <li data-i18n="service_plumbing">Basic plumbing</li>
+        <li data-i18n="service_electric">Basic electrical repairs</li>
+        <li data-i18n="service_appliances">Appliance install / replacement</li>
+        <li data-i18n="service_ventilation">Fan and hood installation</li>
+        <li data-i18n="service_ac">Air conditioner maintenance</li>
+        <li data-i18n="service_seasonal">Seasonal maintenance checks</li>
+        <li data-i18n="service_furniture">Furniture assembly</li>
+        <li data-i18n="service_demolition">Minor demolition / small concrete</li>
+      </ul>
+
+      <h3 style="margin-top: 16px;">How service calls work</h3>
+      <ol class="list-clean">
+        <li>You send the request (form / text / email) + photos if possible.</li>
+        <li>I confirm schedule. If it’s bigger than a quick fix, I provide an estimate.</li>
+        <li>I complete the work, keep the area clean, and report back (photos if helpful).</li>
+      </ol>
+
+      <h3 style="margin-top: 16px;">Good fit for</h3>
+      <ul class="list-clean">
+        <li>Plex & small buildings (2–20 units)</li>
+        <li>Rental turnovers (small fixes between tenants)</li>
+        <li>Preventive maintenance to reduce repeated issues</li>
+      </ul>
+
+      <h3 style="margin-top: 16px;">Not included (separate quote)</h3>
+      <ul class="list-clean">
+        <li>Major renovations, structural work, full rewiring or re-piping</li>
+        <li>Work requiring specialized licensed trades beyond safe scope</li>
+      </ul>
+      <p class="small" style="margin-top: 8px;">
+        For bigger jobs, I can assess the issue and provide a clear quote (or coordinate with the right specialist).
+      </p>
+
+      <div style="margin-top: 14px;">
+        <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+      </div>
+    </section>
   </main>
 
   <footer>
     © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
   </footer>
 
-  <script src="js/lang.js"></script>
+  <script src="js/lang.js" defer></script>
 </body>
 </html>
