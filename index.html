@@ -3,21 +3,63 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MultiFix</title>
+
+  <!-- SEO -->
+  <title>MultiFix Montreal | Rental Property Maintenance & Repairs</title>
+  <meta name="description" content="Rental property maintenance & repairs for plex and small buildings (2–20 units) in Montreal, Laval and the South Shore. One trusted technician for tenant requests, small repairs, installs and preventive maintenance." />
+  <link rel="canonical" href="https://multifixmontreal.ca/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="MultiFix" />
+  <meta property="og:title" content="MultiFix Montreal | Rental Property Maintenance & Repairs" />
+  <meta property="og:description" content="One trusted technician for plex and small buildings (2–20 units): tenant requests, repairs, installs and preventive maintenance." />
+  <meta property="og:url" content="https://multifixmontreal.ca/" />
+  <meta name="twitter:card" content="summary" />
+
+  <!-- LocalBusiness schema (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "MultiFix Montreal",
+    "url": "https://multifixmontreal.ca/",
+    "areaServed": [
+      "Montreal, QC",
+      "Laval, QC",
+      "South Shore, QC"
+    ],
+    "telephone": "+1-438-365-5756",
+    "email": "hybridheating38@gmail.com",
+    "description": "Rental property maintenance & repairs for plex and small buildings (2–20 units): tenant requests, small repairs, installs, and preventive maintenance.",
+    "serviceType": [
+      "Building maintenance",
+      "Handyman services",
+      "Plumbing repairs",
+      "Appliance installation",
+      "Air conditioner installation and service"
+    ]
+  }
+  </script>
+
   <link rel="stylesheet" href="css/style.css"/>
 </head>
+
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
-    <div class="language-switch">
+
+    <div class="language-switch" aria-label="Language switch">
       <button type="button" onclick="setLanguage('en')">EN</button>
       <button type="button" onclick="setLanguage('fr')">FR</button>
       <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+
     <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav>
+  <nav aria-label="Main navigation">
     <a href="index.html" data-i18n="nav_home">Home</a>
     <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
@@ -26,41 +68,42 @@
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
 
-  <main>
+  <main id="main">
     <div class="grid">
-  <section class="section">
-    <h2 data-i18n="home_title">Rental property maintenance & repairs — one trusted technician</h2>
-    <p data-i18n="home_description">
-      For plex and small buildings (2–20 units): I handle tenant requests, small repairs, installs, and preventive maintenance — so you don’t have to chase contractors.
-    </p>
-    <div class="kv" style="margin-top: 10px;">
-      <span data-i18n="home_trust_1">Real building maintenance experience</span>
-      <span data-i18n="home_trust_2">Calm, professional work</span>
-      <span data-i18n="home_trust_3">Root-cause approach</span>
-    </div>
-    <div style="margin-top: 14px;">
-      <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
-      <a class="btn secondary" href="owners.html" style="margin-left: 10px;" data-i18n="home_cta_secondary">See how it works</a>
-    </div>
-  </section>
+      <section class="section">
+        <h2 data-i18n="home_title">Rental property maintenance & repairs — one trusted technician</h2>
+        <p data-i18n="home_description">
+          For plex and small buildings (2–20 units): I handle tenant requests, small repairs, installs, and preventive maintenance — so you don’t have to chase contractors.
+        </p>
 
-  <aside class="section">
-    <h3 data-i18n="home_trust_title">Why owners choose MultiFix</h3>
-    <ul class="list-clean">
-      <li data-i18n="home_trust_1">Real building maintenance experience</li>
-      <li data-i18n="home_trust_2">Calm, professional work</li>
-      <li data-i18n="home_trust_3">Root-cause approach</li>
-    </ul>
-    <p class="small" style="margin-top: 10px;" data-i18n="motto">Good work is done calmly.</p>
-  </aside>
-</div>
+        <div class="kv" style="margin-top: 10px;">
+          <span data-i18n="home_trust_1">Real building maintenance experience</span>
+          <span data-i18n="home_trust_2">Calm, professional work</span>
+          <span data-i18n="home_trust_3">Root-cause approach</span>
+        </div>
 
+        <div style="margin-top: 14px;">
+          <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+          <a class="btn secondary" href="owners.html" style="margin-left: 10px;" data-i18n="home_cta_secondary">See how it works</a>
+        </div>
+      </section>
+
+      <aside class="section">
+        <h3 data-i18n="home_trust_title">Why owners choose MultiFix</h3>
+        <ul class="list-clean">
+          <li data-i18n="home_trust_1">Real building maintenance experience</li>
+          <li data-i18n="home_trust_2">Calm, professional work</li>
+          <li data-i18n="home_trust_3">Root-cause approach</li>
+        </ul>
+        <p class="small" style="margin-top: 10px;" data-i18n="motto">Good work is done calmly.</p>
+      </aside>
+    </div>
   </main>
 
   <footer>
     © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
   </footer>
 
-  <script src="js/lang.js"></script>
+  <script src="js/lang.js" defer></script>
 </body>
 </html>
