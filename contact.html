@@ -15,11 +15,13 @@
 <body>
   <header>
     <h1 data-i18n="title">MultiFix</h1>
+
     <div class="language-switch" aria-label="Language switch">
       <button type="button" onclick="setLanguage('en')">EN</button>
       <button type="button" onclick="setLanguage('fr')">FR</button>
       <button type="button" onclick="setLanguage('uk')">UA</button>
     </div>
+
     <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
@@ -28,7 +30,7 @@
     <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
     <a href="services.html" data-i18n="nav_services">Services</a>
     <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
-    <a href="contact.html" data-i18n="nav_contact">Contact</a>
+    <a href="contact.html" data-i18n="nav_contact" aria-current="page">Contact</a>
     <a href="about.html" data-i18n="nav_about">About</a>
   </nav>
 
@@ -46,16 +48,16 @@
     <section class="section" id="request">
       <h2 data-i18n="form_title">Request a service call</h2>
 
-      <!-- Success message after redirect -->
+      <!-- success message after redirect -->
       <p id="formSuccess" class="small" style="margin-bottom:10px; font-weight:600;" hidden data-i18n="form_success">
         Thanks! Your request was sent. I’ll contact you shortly.
       </p>
 
-      <!-- REAL submit without mail app (FormSubmit) -->
+      <!-- FormSubmit -->
       <form action="https://formsubmit.co/hybridheating38@gmail.com" method="POST">
         <!-- anti-spam -->
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="MultiFix Service Request">
         <input type="hidden" name="_next" value="https://multifixmontreal.ca/contact.html?sent=1#request">
@@ -95,7 +97,7 @@
         <div class="form-row three" style="margin-top: 10px;">
           <div>
             <label for="units" data-i18n="form_units">Number of units (if applicable)</label>
-            <input id="units" name="units" type="text"
+            <input id="units" name="units" type="number" min="0" step="1"
                    data-i18n-placeholder="form_units" placeholder="Number of units"/>
           </div>
 
