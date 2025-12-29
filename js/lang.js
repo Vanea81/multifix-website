@@ -41,14 +41,14 @@ const translations = {
     services_note:
       "Focus: rental properties and small buildings. If the job is bigger, I can coordinate a separate quote with the right specialist.",
     service_painting: "Drywall & paint touch-ups",
-    service_plumbing: "Basic plumbing (leaks, faucets, traps, toilets, cartridges)",
     service_electric: "Basic electrical repairs (switches, outlets, fixtures)",
     service_appliances: "Appliance install / replacement (dishwasher, washer, dryer, hood)",
     service_ventilation: "Bathroom fans & hood installation / replacement",
-    service_ac: "Air conditioner maintenance & replacement coordination",
     service_seasonal: "Seasonal & preventive maintenance checks",
-    service_furniture: "Furniture assembly and small adjustments",
+    service_ac: "Air conditioner maintenance & replacement coordination",
+    service_plumbing: "Basic plumbing (leaks, faucets, traps, toilets, cartridges)",
     service_demolition: "Minor demolition / small concrete tasks (case by case)",
+    service_furniture: "Furniture assembly and small adjustments",
 
     services_how_title: "How service calls work",
     services_how_1: "You send the request (form / text / email) + photos if possible.",
@@ -76,6 +76,8 @@ const translations = {
     motto: "Good work is done calmly.",
 
     form_title: "Request a service call",
+    form_success: "Thanks! Your request was sent. I’ll contact you shortly.",
+    form_tip: "Tip: if photos help, email them separately and include your phone number.",
     form_name: "Name",
     form_phone: "Phone",
     form_email: "Email",
@@ -99,12 +101,6 @@ const translations = {
     opt_urg_today: "Today",
     opt_urg_week: "This week",
     opt_urg_flex: "Flexible",
-
-    // THANK YOU PAGE
-    thanks_title: "Request sent",
-    thanks_text: "Thanks! I received your request and will get back to you shortly.",
-    thanks_back_home: "Back to Home",
-    thanks_back_contact: "Send another request",
 
     about_title: "About MultiFix",
     about_text_1:
@@ -162,14 +158,14 @@ const translations = {
     services_note:
       "Focus : immeubles locatifs et petits bâtiments. Pour les gros travaux, je peux coordonner un devis séparé avec un spécialiste.",
     service_painting: "Retouches gypse & peinture",
-    service_plumbing: "Plomberie de base (fuites, robinets, siphons, toilettes, cartouches)",
     service_electric: "Électricité de base (interrupteurs, prises, luminaires)",
     service_appliances: "Installation / remplacement d’électroménagers",
     service_ventilation: "Installation / remplacement de ventilateurs et hottes",
-    service_ac: "Entretien climatisation & coordination remplacement",
     service_seasonal: "Entretien saisonnier & préventif",
-    service_furniture: "Assemblage de meubles et ajustements",
+    service_ac: "Entretien climatisation & coordination remplacement",
+    service_plumbing: "Plomberie de base (fuites, robinets, siphons, toilettes, cartouches)",
     service_demolition: "Petite démolition / petits travaux de béton (au cas par cas)",
+    service_furniture: "Assemblage de meubles et ajustements",
 
     services_how_title: "Comment se déroule une intervention",
     services_how_1: "Vous envoyez la demande (formulaire / texto / courriel) + photos si possible.",
@@ -197,6 +193,8 @@ const translations = {
     motto: "De bons travaux se font calmement.",
 
     form_title: "Demande d’intervention",
+    form_success: "Merci ! Votre demande a été envoyée. Je vous contacte rapidement.",
+    form_tip: "Conseil : si des photos aident, envoyez-les par courriel et indiquez votre numéro de téléphone.",
     form_name: "Nom",
     form_phone: "Téléphone",
     form_email: "Courriel",
@@ -220,12 +218,6 @@ const translations = {
     opt_urg_today: "Aujourd’hui",
     opt_urg_week: "Cette semaine",
     opt_urg_flex: "Flexible",
-
-    // THANK YOU PAGE
-    thanks_title: "Demande envoyée",
-    thanks_text: "Merci ! J’ai bien reçu votre demande et je vous répondrai rapidement.",
-    thanks_back_home: "Retour à l’accueil",
-    thanks_back_contact: "Envoyer une autre demande",
 
     about_title: "À propos de MultiFix",
     about_text_1:
@@ -283,14 +275,14 @@ const translations = {
     services_note:
       "Фокус — орендна нерухомість і невеликі будинки. Для великих робіт допоможу організувати окремий кошторис зі спеціалістом.",
     service_painting: "Гіпсокартон та підфарбовування",
-    service_plumbing: "Легка сантехніка (підтікання, крани, сифони, туалети, картриджі)",
     service_electric: "Легка електрика (вимикачі, розетки, світильники)",
     service_appliances: "Встановлення/заміна техніки (посудомийка, пральна, сушарка, витяжка)",
     service_ventilation: "Вентилятори ванни та витяжки",
-    service_ac: "Кондиціонери: обслуговування і координація заміни",
     service_seasonal: "Сезонні та профілактичні перевірки",
-    service_furniture: "Збірка меблів і дрібні регулювання",
+    service_ac: "Кондиціонери: обслуговування і координація заміни",
+    service_plumbing: "Легка сантехніка (підтікання, крани, сифони, туалети, картриджі)",
     service_demolition: "Невеликий демонтаж / дрібні бетонні роботи (за домовленістю)",
+    service_furniture: "Збірка меблів і дрібні регулювання",
 
     services_how_title: "Як відбувається виклик",
     services_how_1: "Ви надсилаєте запит (форма / смс / email) + фото, якщо можливо.",
@@ -318,6 +310,8 @@ const translations = {
     motto: "Хороша робота робиться спокійно.",
 
     form_title: "Запит на виклик",
+    form_success: "Дякую! Запит надіслано. Я зв’яжуся з вами найближчим часом.",
+    form_tip: "Порада: якщо потрібні фото — надішліть їх окремо на email і додайте номер телефону.",
     form_name: "Ім’я",
     form_phone: "Телефон",
     form_email: "Email",
@@ -341,12 +335,6 @@ const translations = {
     opt_urg_today: "Сьогодні",
     opt_urg_week: "Цього тижня",
     opt_urg_flex: "Не терміново",
-
-    // THANK YOU PAGE
-    thanks_title: "Запит надіслано",
-    thanks_text: "Дякую! Я отримав ваш запит і відповім найближчим часом.",
-    thanks_back_home: "Повернутися на головну",
-    thanks_back_contact: "Надіслати ще один запит",
 
     about_title: "Про MultiFix",
     about_text_1:
