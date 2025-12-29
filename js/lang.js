@@ -21,57 +21,25 @@ const translations = {
     home_trust_3: "Root-cause approach: fix the problem, not just the symptom",
 
     owners_title: "For plex & small building owners (2–20 units)",
-    owners_lead:
-      "One reliable point of contact for ongoing maintenance — so you spend less time chasing contractors and more time running your property.",
-
     owners_pain_title: "Common pain points",
     owners_pain_1: "Tenant requests every week",
     owners_pain_2: "Evenings lost calling different contractors",
     owners_pain_3: "Small issues become expensive when ignored",
-
     owners_solution_title: "Simple solution",
     owners_solution_text:
       "One point of contact for ongoing maintenance. I take care of the day-to-day issues and keep you informed.",
-
-    owners_handle_title: "What I handle (typical requests)",
-    owners_handle_1: "Doors, locks, handles, hinges, closers",
-    owners_handle_2: "Drywall patches, painting touch-ups",
-    owners_handle_3: "Basic plumbing: leaks, traps, faucets, toilets (minor)",
-    owners_handle_4: "Basic electrical: outlets/switches/light fixtures (safe scope)",
-    owners_handle_5: "Appliance installation/replacement (dishwasher, washer, dryer, etc.)",
-    owners_handle_6: "AC / ventilation basic service & installation (when applicable)",
-    owners_handle_7: "Preventive checks and small fixes before they become emergencies",
-
     owners_how_title: "How it works",
     owners_step_1: "You send a request (form / text / email)",
     owners_step_2: "I confirm schedule + estimate if needed",
     owners_step_3: "I fix, document, and report back (simple summary + photos if useful)",
-
     owners_formats_title: "Service formats",
     owners_format_1: "On-call service (as needed)",
     owners_format_2: "Maintenance plan (monthly) — priority response + preventive checks (optional)",
     owners_cta: "Talk about your property",
 
-    owners_exclude_title: "What’s not included (separate quote)",
-    owners_exclude_1:
-      "Major renovations, structural work, large electrical panels, full plumbing re-pipes",
-    owners_exclude_2: "Emergency after-hours service (if needed — case-by-case)",
-    owners_exclude_3: "Jobs requiring specialized licensed trades beyond safe scope",
-    owners_exclude_note:
-      "For bigger jobs, I can assess the issue, explain the options, and provide a clear quote (or coordinate with the right licensed specialist).",
-
-    owners_faq_title: "Quick FAQ",
-    owners_faq_q1: "Do you work with tenants directly?",
-    owners_faq_a1: "Yes — with owner/manager approval and clear communication.",
-    owners_faq_q2: "Do you provide photos/updates?",
-    owners_faq_a2: "Yes — before/after where helpful.",
-    owners_faq_q3: "Do you offer preventive maintenance?",
-    owners_faq_a3: "Yes — to reduce repeated issues and surprises.",
-
     services_title: "Maintenance & repair services",
     services_note:
       "Focus: rental properties and small buildings. If the job is bigger, I can coordinate a separate quote with the right specialist.",
-
     service_painting: "Drywall & paint touch-ups",
     service_plumbing: "Basic plumbing (leaks, faucets, traps, toilets, cartridges)",
     service_electric: "Basic electrical repairs (switches, outlets, fixtures)",
@@ -132,6 +100,12 @@ const translations = {
     opt_urg_week: "This week",
     opt_urg_flex: "Flexible",
 
+    // THANK YOU PAGE
+    thanks_title: "Request sent",
+    thanks_text: "Thanks! I received your request and will get back to you shortly.",
+    thanks_back_home: "Back to Home",
+    thanks_back_contact: "Send another request",
+
     about_title: "About MultiFix",
     about_text_1:
       "I’m a hands-on building maintenance technician with real experience maintaining a large residential building in Quebec (around 130 apartments), plus many years of repair experience before Canada.",
@@ -168,62 +142,25 @@ const translations = {
     home_trust_3: "Approche “cause racine” : réparer le problème, pas seulement le symptôme",
 
     owners_title: "Pour propriétaires de plex & petits immeubles (2 à 20 logements)",
-    owners_lead:
-      "Un point de contact fiable pour l’entretien courant — vous passez moins de temps à courir après des entrepreneurs et plus de temps à gérer votre immeuble.",
-
     owners_pain_title: "Problèmes fréquents",
     owners_pain_1: "Demandes constantes des locataires",
     owners_pain_2: "Soirées perdues à chercher des entrepreneurs",
     owners_pain_3: "Les petits problèmes deviennent coûteux",
-
     owners_solution_title: "Solution simple",
     owners_solution_text:
       "Un seul contact pour l’entretien courant. Je gère le quotidien et je vous tiens au courant.",
-
-    owners_handle_title: "Ce que je prends en charge (demandes typiques)",
-    owners_handle_1: "Portes, serrures, poignées, charnières, ferme-portes",
-    owners_handle_2: "Réparations de gypse, retouches de peinture",
-    owners_handle_3: "Plomberie de base : fuites, siphons, robinets, toilettes (mineur)",
-    owners_handle_4:
-      "Électricité de base : prises/interrupteurs/luminaires (périmètre sécuritaire)",
-    owners_handle_5:
-      "Installation/remplacement d’électros (lave-vaisselle, laveuse, sécheuse, etc.)",
-    owners_handle_6: "AC / ventilation : service de base & installation (si applicable)",
-    owners_handle_7:
-      "Vérifications préventives et petites réparations avant que ça devienne urgent",
-
     owners_how_title: "Comment ça marche",
     owners_step_1: "Vous envoyez la demande (formulaire / texto / courriel)",
     owners_step_2: "Je confirme l’horaire + estimation si nécessaire",
     owners_step_3: "Intervention + petit rapport (et photos si utile)",
-
     owners_formats_title: "Formats de service",
     owners_format_1: "Appels ponctuels (au besoin)",
     owners_format_2: "Forfait mensuel (optionnel) — priorité + entretien préventif",
     owners_cta: "Parler de votre immeuble",
 
-    owners_exclude_title: "Non inclus (devis séparé)",
-    owners_exclude_1:
-      "Rénovations majeures, structure, gros panneaux électriques, remplacement complet de plomberie",
-    owners_exclude_2: "Urgences hors heures (si nécessaire — au cas par cas)",
-    owners_exclude_3:
-      "Travaux nécessitant des métiers spécialisés/licenciés hors périmètre",
-    owners_exclude_note:
-      "Pour les gros travaux, je peux évaluer, expliquer les options et fournir un devis clair (ou coordonner avec le bon spécialiste licencié).",
-
-    owners_faq_title: "FAQ rapide",
-    owners_faq_q1: "Travaillez-vous directement avec les locataires ?",
-    owners_faq_a1:
-      "Oui — avec l’accord du propriétaire/gestionnaire et une communication claire.",
-    owners_faq_q2: "Fournissez-vous des photos/mises à jour ?",
-    owners_faq_a2: "Oui — avant/après lorsque c’est utile.",
-    owners_faq_q3: "Offrez-vous de l’entretien préventif ?",
-    owners_faq_a3: "Oui — pour réduire les problèmes répétitifs et les surprises.",
-
     services_title: "Services d’entretien & réparation",
     services_note:
       "Focus : immeubles locatifs et petits bâtiments. Pour les gros travaux, je peux coordonner un devis séparé avec un spécialiste.",
-
     service_painting: "Retouches gypse & peinture",
     service_plumbing: "Plomberie de base (fuites, robinets, siphons, toilettes, cartouches)",
     service_electric: "Électricité de base (interrupteurs, prises, luminaires)",
@@ -284,6 +221,12 @@ const translations = {
     opt_urg_week: "Cette semaine",
     opt_urg_flex: "Flexible",
 
+    // THANK YOU PAGE
+    thanks_title: "Demande envoyée",
+    thanks_text: "Merci ! J’ai bien reçu votre demande et je vous répondrai rapidement.",
+    thanks_back_home: "Retour à l’accueil",
+    thanks_back_contact: "Envoyer une autre demande",
+
     about_title: "À propos de MultiFix",
     about_text_1:
       "Je suis technicien d’entretien d’immeubles avec une expérience réelle en maintenance d’un grand bâtiment résidentiel au Québec (environ 130 logements), plus plusieurs années d’expérience avant le Canada.",
@@ -320,62 +263,25 @@ const translations = {
     home_trust_3: "Пошук першопричини: вирішую проблему, а не симптом",
 
     owners_title: "Для власників plex та невеликих будинків (2–20 квартир)",
-    owners_lead:
-      "Одна надійна точка контакту для техобслуговування — менше часу на “погоню” за підрядниками і більше часу на управління вашим об’єктом.",
-
     owners_pain_title: "Типові проблеми",
     owners_pain_1: "Заявки орендарів щотижня",
     owners_pain_2: "Вечори йдуть на пошук підрядників",
     owners_pain_3: "Дрібні проблеми стають дорогими",
-
     owners_solution_title: "Просте рішення",
     owners_solution_text:
       "Одна точка контакту для техобслуговування. Я закриваю щоденні питання і тримаю вас у курсі.",
-
-    owners_handle_title: "Що я закриваю (типові запити)",
-    owners_handle_1: "Двері, замки, ручки, петлі, доводчики",
-    owners_handle_2: "Латки гіпсокартону, підфарбовування",
-    owners_handle_3: "Легка сантехніка: підтікання, сифони, крани, туалети (дрібне)",
-    owners_handle_4:
-      "Легка електрика: розетки/вимикачі/світильники (у безпечному обсязі)",
-    owners_handle_5:
-      "Встановлення/заміна техніки (посудомийка, пральна, сушарка тощо)",
-    owners_handle_6: "AC / вентиляція: базовий сервіс та монтаж (коли доречно)",
-    owners_handle_7:
-      "Профілактичні перевірки і дрібні фікси до того, як це стане аварією",
-
     owners_how_title: "Як працюємо",
     owners_step_1: "Ви залишаєте запит (форма / смс / email)",
     owners_step_2: "Я підтверджую час + оцінку, якщо потрібно",
     owners_step_3: "Роблю, фіксую і відправляю короткий звіт (за потреби з фото)",
-
     owners_formats_title: "Формати",
     owners_format_1: "Разові виклики (за потреби)",
     owners_format_2: "Місячний пакет (опційно) — пріоритет + профілактика",
     owners_cta: "Обговорити ваш об’єкт",
 
-    owners_exclude_title: "Що не входить (окремий кошторис)",
-    owners_exclude_1:
-      "Великі ремонти, конструктив, великі електрощити, повна заміна труб",
-    owners_exclude_2:
-      "Аварійні виїзди після робочого часу (за потреби — індивідуально)",
-    owners_exclude_3:
-      "Роботи, які потребують вузьких ліцензій поза безпечним обсягом",
-    owners_exclude_note:
-      "Для більших робіт можу оцінити проблему, пояснити варіанти і зробити чіткий кошторис (або скоординувати з потрібним ліцензованим спеціалістом).",
-
-    owners_faq_title: "Короткий FAQ",
-    owners_faq_q1: "Працюєте напряму з орендарями?",
-    owners_faq_a1: "Так — за згодою власника/менеджера і з чіткою комунікацією.",
-    owners_faq_q2: "Даєте фото/оновлення?",
-    owners_faq_a2: "Так — до/після, коли це корисно.",
-    owners_faq_q3: "Робите профілактику?",
-    owners_faq_a3: "Так — щоб зменшити повторювані проблеми і “сюрпризи”.",
-
     services_title: "Послуги техобслуговування та ремонту",
     services_note:
       "Фокус — орендна нерухомість і невеликі будинки. Для великих робіт допоможу організувати окремий кошторис зі спеціалістом.",
-
     service_painting: "Гіпсокартон та підфарбовування",
     service_plumbing: "Легка сантехніка (підтікання, крани, сифони, туалети, картриджі)",
     service_electric: "Легка електрика (вимикачі, розетки, світильники)",
@@ -435,6 +341,12 @@ const translations = {
     opt_urg_today: "Сьогодні",
     opt_urg_week: "Цього тижня",
     opt_urg_flex: "Не терміново",
+
+    // THANK YOU PAGE
+    thanks_title: "Запит надіслано",
+    thanks_text: "Дякую! Я отримав ваш запит і відповім найближчим часом.",
+    thanks_back_home: "Повернутися на головну",
+    thanks_back_contact: "Надіслати ще один запит",
 
     about_title: "Про MultiFix",
     about_text_1:
