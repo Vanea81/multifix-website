@@ -1,135 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- SEO -->
-  <title>MultiFix Montreal | Rental Property Maintenance & Repairs</title>
-  <meta name="description" content="Rental property maintenance & repairs for plex and small buildings (2–20 units) in Montreal, Laval and the South Shore. One trusted technician for tenant requests, small repairs, installs and preventive maintenance." />
-  <link rel="canonical" href="https://multifixmontreal.ca/" />
-  <meta name="robots" content="index,follow" />
-
-  <!-- Social -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="MultiFix" />
-  <meta property="og:title" content="MultiFix Montreal | Rental Property Maintenance & Repairs" />
-  <meta property="og:description" content="One trusted technician for plex and small buildings (2–20 units): tenant requests, repairs, installs and preventive maintenance." />
-  <meta property="og:url" content="https://multifixmontreal.ca/" />
-  <meta name="twitter:card" content="summary" />
-
-  <!-- LocalBusiness schema (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "MultiFix Montreal",
-    "url": "https://multifixmontreal.ca/",
-    "areaServed": [
-      "Montreal, QC",
-      "Laval, QC",
-      "South Shore, QC"
-    ],
-    "telephone": "+1-438-365-5756",
-    "email": "hybridheating38@gmail.com",
-    "description": "Rental property maintenance & repairs for plex and small buildings (2–20 units): tenant requests, small repairs, installs, and preventive maintenance.",
-    "serviceType": [
-      "Building maintenance",
-      "Handyman services",
-      "Plumbing repairs",
-      "Appliance installation",
-      "Air conditioner installation and service"
-    ]
-  }
-  </script>
-
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MultiFix Montréal — Rental-ready support & coordination</title>
+  <meta name="description" content="Rental-ready support for owners and small property managers: documentation, coordination with licensed contractors, and non-structural assistance by appointment in Montréal." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header>
-    <h1 data-i18n="title">MultiFix</h1>
-
-    <div class="language-switch" aria-label="Language switch">
-      <button type="button" onclick="setLanguage('en')">EN</button>
-      <button type="button" onclick="setLanguage('fr')">FR</button>
-      <button type="button" onclick="setLanguage('uk')">UA</button>
+  <header class="mf-container">
+    <div class="mf-topbar">
+      <div class="mf-brand">MultiFix Montréal</div>
+      <nav class="mf-nav">
+        <a href="index.html">Home</a>
+        <a href="owners.html">For Owners</a>
+        <a href="services.html">Support</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
-
-    <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html" data-i18n="nav_home">Home</a>
-    <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
-    <a href="services.html" data-i18n="nav_services">Services</a>
-    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
-    <a href="contact.html" data-i18n="nav_contact">Contact</a>
-    <a href="about.html" data-i18n="nav_about">About</a>
-  </nav>
-
-  <main id="main">
-    <div class="grid">
-      <section class="section">
-        <h2 data-i18n="home_title">Rental property maintenance & repairs — one trusted technician</h2>
-        <p data-i18n="home_description">
-          For plex and small buildings (2–20 units): I handle tenant requests, small repairs, installs, and preventive maintenance — so you don’t have to chase contractors.
-        </p>
-
-        <div class="kv" style="margin-top: 10px;">
-          <span data-i18n="home_trust_1">Real building maintenance experience</span>
-          <span data-i18n="home_trust_2">Calm, professional work</span>
-          <span data-i18n="home_trust_3">Root-cause approach</span>
-        </div>
-
-        <div style="margin-top: 14px;">
-          <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
-          <a class="btn secondary" href="owners.html" style="margin-left: 10px;" data-i18n="home_cta_secondary">See how it works</a>
-        </div>
-      </section>
-
-      <aside class="section">
-        <h3 data-i18n="home_trust_title">Why owners choose MultiFix</h3>
-        <ul class="list-clean">
-          <li data-i18n="home_trust_1">Real building maintenance experience</li>
-          <li data-i18n="home_trust_2">Calm, professional work</li>
-          <li data-i18n="home_trust_3">Root-cause approach</li>
-        </ul>
-        <p class="small" style="margin-top: 10px;" data-i18n="motto">Good work is done calmly.</p>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
-    <!-- Блок для відгуків у Google -->
-    <div style="margin-bottom: 10px; text-align: center;">
-      <p style="margin-bottom: 6px; font-size: 0.95rem;">
-        Happy with my work? Leave a review on Google:
+  <main class="mf-container">
+    <section class="mf-hero">
+      <span class="mf-badge">By appointment • Montréal</span>
+      <h1 class="mf-h1">Rental-ready support, documentation & coordination</h1>
+      <p class="mf-sub">
+        I help owners and small property managers keep units ready for move-in with clear documentation,
+        practical non-structural assistance, and coordination with licensed contractors when regulated work is needed.
       </p>
-      <a
-        href="https://www.google.com/search?q=multifix+%E2%80%93%E2%80%9Cbuilding+maintenance%E2%80%9D+%D0%B2%D1%96%D0%B4%D0%B3%D1%83%D0%BA%D0%B8"
-        target="_blank"
-        rel="noopener"
-        class="btn secondary"
-        style="display: inline-block; margin-bottom: 6px;"
-      >
-        ⭐ Leave a review on Google
-      </a>
-      <br/>
-      <a
-        href="https://www.google.com/search?q=multifix+%E2%80%93%E2%80%9Cbuilding+maintenance%E2%80%9D+%D0%B2%D1%96%D0%B4%D0%B3%D1%83%D0%BA%D0%B8"
-        target="_blank"
-        rel="noopener"
-        class="btn secondary"
-        style="display: inline-block; margin-top: 2px;"
-      >
-        ⭐ Laisser un avis sur Google
-      </a>
-    </div>
 
-    © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
-  </footer>
+      <div class="mf-cta">
+        <a class="mf-btn" href="contact.html">Request a visit / estimate</a>
+        <a class="mf-btn" href="gallery.html">See portfolio</a>
+      </div>
 
-  <script src="js/lang.js" defer></script>
+      <div class="mf-notice">
+        <strong>Important:</strong>
+        Licensed trades (plumbing, electrical, gas, HVAC, structural work) are performed by certified contractors only.
+        I can document the issue and coordinate the intervention.
+      </div>
+    </section>
+
+    <section class="mf-grid">
+      <div class="mf-card">
+        <h3>What I do</h3>
+        <ul>
+          <li>Photo documentation (before/after) + simple work summary</li>
+          <li>Turnover support: checks, small fixes, readiness follow-up</li>
+          <li>Non-structural assistance: sealing/caulking, minor adjustments, mounting (TV/shelves), assembly</li>
+          <li>Coordination with licensed contractors for regulated work</li>
+        </ul>
+      </div>
+
+      <div class="mf-card">
+        <h3>What I don’t do</h3>
+        <ul>
+          <li>Plumbing modifications or licensed plumbing work</li>
+          <li>Electrical wiring/panels/new circuits</li>
+          <li>Gas / HVAC projects</li>
+          <li>Structural changes, roofing, facade work</li>
+        </ul>
+        <p style="margin-top:10px;opacity:.85">
+          If a task falls into a licensed trade, I document it and connect you with certified pros.
+        </p>
+      </div>
+    </section>
+
+    <section class="mf-notice">
+      <strong>How it works:</strong>
+      1) You send photos + address → 2) I visit by appointment → 3) You get a clear plan: what’s safe to do now, what needs licensed trades.
+    </section>
+
+    <footer class="mf-footer">
+      <div>MultiFix Montréal • Documentation • Coordination • Non-structural support • By appointment</div>
+    </footer>
+  </main>
 </body>
 </html>
