@@ -1,130 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <!-- SEO -->
-  <title>For Owners | MultiFix Montreal — Plex & Small Buildings</title>
-  <meta name="description" content="Maintenance for plex and small buildings (2–20 units) in Montreal, Laval and the South Shore. One contact for tenant requests, small repairs and preventive checks." />
-  <meta name="robots" content="index,follow" />
-
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>For Owners — MultiFix Montréal</title>
+  <meta name="description" content="A simple, documented process for owners and small property managers to keep units rental-ready in Montréal." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header>
-    <h1 data-i18n="title">MultiFix</h1>
-
-    <div class="language-switch" aria-label="Language switch">
-      <button type="button" onclick="setLanguage('en')">EN</button>
-      <button type="button" onclick="setLanguage('fr')">FR</button>
-      <button type="button" onclick="setLanguage('uk')">UA</button>
+  <header class="mf-container">
+    <div class="mf-topbar">
+      <div class="mf-brand">MultiFix Montréal</div>
+      <nav class="mf-nav">
+        <a href="index.html">Home</a>
+        <a href="owners.html">For Owners</a>
+        <a href="services.html">Support</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
-
-    <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html" data-i18n="nav_home">Home</a>
-    <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
-    <a href="services.html" data-i18n="nav_services">Services</a>
-    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
-    <a href="contact.html" data-i18n="nav_contact">Contact</a>
-    <a href="about.html" data-i18n="nav_about">About</a>
-  </nav>
-
-  <main id="main">
-    <section class="section">
-      <h2 data-i18n="owners_title">For plex & small building owners (2–20 units)</h2>
-
-      <!-- Це якраз було англійським на UA-версії -->
-      <p data-i18n="owners_lead">
-        One reliable point of contact for ongoing maintenance — so you spend less time chasing contractors and more time running your property.
+  <main class="mf-container">
+    <section class="mf-hero">
+      <span class="mf-badge">For owners & managers</span>
+      <h1 class="mf-h1">One reliable contact for documented follow-up</h1>
+      <p class="mf-sub">
+        If you manage a small building or a few units, you need calm, clean, well-documented follow-up — and a clear line between what is safe to handle and what requires licensed trades.
       </p>
 
-      <div style="margin-top: 14px;">
-        <a class="btn" href="contact.html#request" data-i18n="owners_cta">Talk about your property</a>
-      </div>
-
-      <h3 style="margin-top: 16px;" data-i18n="owners_pain_title">Common pain points</h3>
-      <ul class="list-clean">
-        <li data-i18n="owners_pain_1">Tenant requests every week</li>
-        <li data-i18n="owners_pain_2">Evenings lost calling different contractors</li>
-        <li data-i18n="owners_pain_3">Small issues become expensive when ignored</li>
-      </ul>
-
-      <h3 style="margin-top: 16px;" data-i18n="owners_solution_title">Simple solution</h3>
-      <p data-i18n="owners_solution_text">
-        One point of contact for ongoing maintenance. I take care of the day-to-day issues and keep you informed.
-      </p>
-
-      <!-- Це теж було англійським -->
-      <h3 style="margin-top: 16px;" data-i18n="owners_handle_title">What I handle (typical requests)</h3>
-      <ul class="list-clean">
-        <li data-i18n="owners_handle_1">Doors, locks, handles, hinges, closers</li>
-        <li data-i18n="owners_handle_2">Drywall patches, painting touch-ups</li>
-        <li data-i18n="owners_handle_3">Basic plumbing: leaks, traps, faucets, toilets (minor)</li>
-        <li data-i18n="owners_handle_4">Basic electrical: outlets/switches/light fixtures (safe scope)</li>
-        <li data-i18n="owners_handle_5">Appliance installation/replacement (dishwasher, washer, dryer, etc.)</li>
-        <li data-i18n="owners_handle_6">AC / ventilation basic service & installation (when applicable)</li>
-        <li data-i18n="owners_handle_7">Preventive checks and small fixes before they become emergencies</li>
-      </ul>
-
-      <h3 style="margin-top: 16px;" data-i18n="owners_how_title">How it works</h3>
-      <ol class="list-clean">
-        <li data-i18n="owners_step_1">You send a request (form / text / email)</li>
-        <li data-i18n="owners_step_2">I confirm schedule + estimate if needed</li>
-        <li data-i18n="owners_step_3">I fix, document, and report back (simple summary + photos if useful)</li>
-      </ol>
-
-      <h3 style="margin-top: 16px;" data-i18n="owners_formats_title">Service formats</h3>
-      <ul class="list-clean">
-        <li data-i18n="owners_format_1">On-call service (as needed)</li>
-        <li data-i18n="owners_format_2">Maintenance plan (monthly) — priority response + preventive checks (optional)</li>
-      </ul>
-
-      <!-- Це було англійським -->
-      <h3 style="margin-top: 16px;" data-i18n="owners_exclude_title">What’s not included (separate quote)</h3>
-      <ul class="list-clean">
-        <li data-i18n="owners_exclude_1">Major renovations, structural work, large electrical panels, full plumbing re-pipes</li>
-        <li data-i18n="owners_exclude_2">Emergency after-hours service (if needed — case-by-case)</li>
-        <li data-i18n="owners_exclude_3">Jobs requiring specialized licensed trades beyond safe scope</li>
-      </ul>
-      <p class="small" style="margin-top: 8px;" data-i18n="owners_exclude_note">
-        For bigger jobs, I can assess the issue, explain the options, and provide a clear quote (or coordinate with the right licensed specialist).
-      </p>
-
-      <!-- Quick FAQ — теж перекладаємо -->
-      <h3 style="margin-top: 16px;" data-i18n="owners_faq_title">Quick FAQ</h3>
-      <ul class="list-clean">
-        <li>
-          <strong data-i18n="owners_faq_q1">Do you work with tenants directly?</strong>
-          <span> — </span>
-          <span data-i18n="owners_faq_a1">Yes — with owner/manager approval and clear communication.</span>
-        </li>
-        <li>
-          <strong data-i18n="owners_faq_q2">Do you provide photos/updates?</strong>
-          <span> — </span>
-          <span data-i18n="owners_faq_a2">Yes — before/after where helpful.</span>
-        </li>
-        <li>
-          <strong data-i18n="owners_faq_q3">Do you offer preventive maintenance?</strong>
-          <span> — </span>
-          <span data-i18n="owners_faq_a3">Yes — to reduce repeated issues and surprises.</span>
-        </li>
-      </ul>
-
-      <div style="margin-top: 14px;">
-        <a class="btn" href="contact.html#request" data-i18n="home_cta_primary">Request a service call</a>
+      <div class="mf-notice">
+        <strong>Clear boundaries:</strong>
+        Licensed trades (plumbing, electrical, gas, HVAC, structural work) are performed by certified contractors only.
+        I document the issue and coordinate the intervention.
       </div>
     </section>
+
+    <section class="mf-grid">
+      <div class="mf-card">
+        <h3>What you get</h3>
+        <ul>
+          <li>Before/after photos</li>
+          <li>Simple written summary (work log)</li>
+          <li>Priority list: what to do now vs what needs licensed trades</li>
+          <li>Appointments coordinated — no chaos</li>
+        </ul>
+      </div>
+
+      <div class="mf-card">
+        <h3>Typical use cases</h3>
+        <ul>
+          <li>Move-out / move-in readiness checks</li>
+          <li>Small recurring issues: trim gaps, minor adjustments, mounting, assembly</li>
+          <li>Documenting problems for insurance or contractor quotes</li>
+          <li>Coordinating licensed pros when a regulated trade is required</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mf-notice">
+      <strong>Workflow:</strong><br/>
+      1) You message photos + address + deadline<br/>
+      2) Visit by appointment<br/>
+      3) You receive a documented plan + clear next steps<br/>
+      4) If needed: I coordinate certified contractors and follow up with documentation
+    </section>
+
+    <section class="mf-grid">
+      <div class="mf-card">
+        <h3>Service style</h3>
+        <ul>
+          <li>Clean work, calm pace, clear communication</li>
+          <li>Documentation first (so decisions are easy)</li>
+          <li>Respect for tenants and common areas</li>
+        </ul>
+      </div>
+
+      <div class="mf-card">
+        <h3>Appointments & communication</h3>
+        <ul>
+          <li>Text/email preferred</li>
+          <li>On-site visits by appointment</li>
+          <li>Simple estimate once I see photos or the unit</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="mf-footer">
+      <div>MultiFix Montréal • Owners support • Documentation • Coordination</div>
+    </footer>
   </main>
-
-  <footer>
-    © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
-  </footer>
-
-  <script src="js/lang.js" defer></script>
 </body>
 </html>
