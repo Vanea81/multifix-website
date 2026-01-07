@@ -1,180 +1,77 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-  <title>MultiFix - Contact</title>
-  <meta name="description" content="Contact MultiFix Montreal for rental property maintenance and repair service calls in Montreal, Laval and the South Shore." />
-  <link rel="canonical" href="https://multifixmontreal.ca/contact.html" />
-  <meta name="robots" content="index,follow" />
-
-  <link rel="stylesheet" href="css/style.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — MultiFix Montréal</title>
+  <meta name="description" content="Contact MultiFix Montréal. By appointment. Text/email preferred. Documentation and coordination with licensed contractors." />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-  <header>
-    <h1 data-i18n="title">MultiFix</h1>
-
-    <div class="language-switch" aria-label="Language switch">
-      <button type="button" onclick="setLanguage('en')">EN</button>
-      <button type="button" onclick="setLanguage('fr')">FR</button>
-      <button type="button" onclick="setLanguage('uk')">UA</button>
+  <header class="mf-container">
+    <div class="mf-topbar">
+      <div class="mf-brand">MultiFix Montréal</div>
+      <nav class="mf-nav">
+        <a href="index.html">Home</a>
+        <a href="owners.html">For Owners</a>
+        <a href="services.html">Support</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
     </div>
-
-    <div class="badge" data-i18n="home_badge">Montreal • Laval • South Shore</div>
   </header>
 
-  <nav aria-label="Main navigation">
-    <a href="index.html" data-i18n="nav_home">Home</a>
-    <a href="owners.html" data-i18n="nav_owners">For Owners / Plex</a>
-    <a href="services.html" data-i18n="nav_services">Services</a>
-    <a href="gallery.html" data-i18n="nav_gallery">Gallery</a>
-    <a href="contact.html" data-i18n="nav_contact" aria-current="page">Contact</a>
-    <a href="about.html" data-i18n="nav_about">About</a>
-  </nav>
-
-  <main>
-    <section class="section">
-      <h2 data-i18n="contact_title">Contact</h2>
-
-      <p data-i18n="contact_phone_full">Phone: +1 438 365 5756</p>
-      <p data-i18n="contact_email_full">Email: hybridheating38@gmail.com</p>
-
-      <p class="small" data-i18n="contact_area">Service area: Montreal and nearby.</p>
-      <p class="small" data-i18n="motto">Good work is done calmly.</p>
-    </section>
-
-    <section class="section" id="request">
-      <h2 data-i18n="form_title">Request a service call</h2>
-
-      <!-- success message after redirect -->
-      <p id="formSuccess" class="small" style="margin-bottom:10px; font-weight:600;" hidden data-i18n="form_success">
-        Thanks! Your request was sent. I’ll contact you shortly.
+  <main class="mf-container">
+    <section class="mf-hero">
+      <span class="mf-badge">Contact</span>
+      <h1 class="mf-h1">Request a visit (by appointment)</h1>
+      <p class="mf-sub">
+        Text/email preferred. Send photos and a short description — I’ll reply with the next step and an appointment option.
       </p>
 
-      <!-- FormSubmit -->
-      <form action="https://formsubmit.co/hybridheating38@gmail.com" method="POST">
-        <!-- anti-spam -->
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="MultiFix Service Request">
-        <input type="hidden" name="_next" value="https://multifixmontreal.ca/contact.html?sent=1#request">
-
-        <div class="form-row two">
-          <div>
-            <label for="name" data-i18n="form_name">Name</label>
-            <input id="name" name="name" type="text" required autocomplete="name"
-                   data-i18n-placeholder="form_name" placeholder="Name"/>
-          </div>
-
-          <div>
-            <label for="phone" data-i18n="form_phone">Phone</label>
-            <input id="phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel"
-                   data-i18n-placeholder="form_phone" placeholder="Phone"/>
-          </div>
-        </div>
-
-        <div class="form-row two" style="margin-top: 10px;">
-          <div>
-            <label for="email" data-i18n="form_email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email"
-                   data-i18n-placeholder="form_email" placeholder="Email"/>
-          </div>
-
-          <div>
-            <label for="property" data-i18n="form_property_type">Property type</label>
-            <select id="property" name="property_type">
-              <option value="house" data-i18n="opt_house">House</option>
-              <option value="condo" data-i18n="opt_condo">Condo</option>
-              <option value="plex" data-i18n="opt_plex">Plex / small building</option>
-              <option value="other" data-i18n="opt_other">Other</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-row three" style="margin-top: 10px;">
-          <div>
-            <label for="units" data-i18n="form_units">Number of units (if applicable)</label>
-            <input id="units" name="units" type="number" min="0" step="1"
-                   data-i18n-placeholder="form_units" placeholder="Number of units"/>
-          </div>
-
-          <div>
-            <label for="area" data-i18n="form_area">Area</label>
-            <select id="area" name="area">
-              <option value="montreal" data-i18n="opt_area_mtl">Montreal</option>
-              <option value="laval" data-i18n="opt_area_laval">Laval</option>
-              <option value="southshore" data-i18n="opt_area_south">South Shore</option>
-              <option value="other" data-i18n="opt_area_other">Other</option>
-            </select>
-          </div>
-
-          <div>
-            <label for="urgency" data-i18n="form_urgency">Urgency</label>
-            <select id="urgency" name="urgency">
-              <option value="today" data-i18n="opt_urg_today">Today</option>
-              <option value="week" data-i18n="opt_urg_week">This week</option>
-              <option value="flex" data-i18n="opt_urg_flex">Flexible</option>
-            </select>
-          </div>
-        </div>
-
-        <div style="margin-top: 10px;">
-          <label for="issue" data-i18n="form_issue">What’s the issue?</label>
-          <textarea id="issue" name="issue" required
-                    data-i18n-placeholder="form_issue" placeholder="What’s the issue?"></textarea>
-        </div>
-
-        <div style="margin-top: 12px;">
-          <input class="btn" type="submit" data-i18n-value="form_submit" value="Send request"/>
-        </div>
-      </form>
-
-      <p class="small" style="margin-top: 10px;" data-i18n="form_tip">
-        Tip: if photos help, email them separately and include your phone number.
-      </p>
+      <div class="mf-notice">
+        <strong>Important:</strong>
+        Licensed trades (plumbing, electrical, gas, HVAC, structural work) are performed by certified contractors only.
+        I can document the issue and coordinate the intervention.
+      </div>
     </section>
+
+    <section class="mf-grid">
+      <div class="mf-card">
+        <h3>How to message me (fastest)</h3>
+        <ul>
+          <li><strong>Photos</strong> (2–6 pictures)</li>
+          <li><strong>Address / area</strong> (Montréal)</li>
+          <li><strong>Deadline</strong> (when you need it)</li>
+          <li><strong>Access</strong> (tenant/keys/parking)</li>
+        </ul>
+        <p style="margin-top:10px;opacity:.85">
+          I reply with: (1) what is safe to handle now, (2) what needs licensed trades, (3) a visit time.
+        </p>
+      </div>
+
+      <div class="mf-card">
+        <h3>Contact</h3>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:hybridheating38@gmail.com">hybridheating38@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+14383655756">+1 (438) 365-5756</a> <span style="opacity:.75">(update this)</span></li>
+        </ul>
+        <p style="margin-top:10px;opacity:.85">
+          If you prefer, write “English” or “Français” in the message.
+        </p>
+      </div>
+    </section>
+
+    <section class="mf-notice">
+      <strong>Appointments only:</strong> no emergency service.  
+      If a situation is urgent (water, electrical hazard, gas smell), contact emergency services or a certified contractor immediately.
+    </section>
+
+    <footer class="mf-footer">
+      <div>MultiFix Montréal • By appointment • Documentation • Coordination</div>
+    </footer>
   </main>
-
-  <footer>
-    <!-- Блок для відгуків у Google -->
-    <div style="margin-bottom: 10px; text-align: center;">
-      <p style="margin-bottom: 6px; font-size: 0.95rem;">
-        Happy with my work? Leave a review on Google:
-      </p>
-      <a
-        href="https://www.google.com/search?q=multifix+%E2%80%93%E2%80%9Cbuilding+maintenance%E2%80%9D+%D0%B2%D1%96%D0%B4%D0%B3%D1%83%D0%BA%D0%B8"
-        target="_blank"
-        rel="noopener"
-        class="btn secondary"
-        style="display: inline-block; margin-bottom: 6px;"
-      >
-        ⭐ Leave a review on Google
-      </a>
-      <br/>
-      <a
-        href="https://www.google.com/search?q=multifix+%E2%80%93%E2%80%9Cbuilding+maintenance%E2%80%9D+%D0%B2%D1%96%D0%B4%D0%B3%D1%83%D0%BA%D0%B8"
-        target="_blank"
-        rel="noopener"
-        class="btn secondary"
-        style="display: inline-block; margin-top: 2px;"
-      >
-        ⭐ Laisser un avis sur Google
-      </a>
-    </div>
-
-    © 2025 <span data-i18n="title">MultiFix</span> — <span data-i18n="footer_text">Rental property maintenance in Montreal</span>
-  </footer>
-
-  <script src="js/lang.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const sent = new URLSearchParams(window.location.search).get("sent");
-      const box = document.getElementById("formSuccess");
-      if (sent === "1" && box) box.hidden = false;
-    });
-  </script>
 </body>
 </html>
