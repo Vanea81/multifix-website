@@ -1,5 +1,5 @@
 /* =========================
-   MultiFix SAFE MODE (clean + fixed nav)
+   MultiFix FINAL CLEAN CSS (stable + clickable nav)
    ========================= */
 
 .mf-container {
@@ -15,6 +15,9 @@
   justify-content: space-between;
   padding: 14px 0;
   border-bottom: 1px solid rgba(0,0,0,.12);
+
+  position: relative;
+  z-index: 100; /* важливо */
 }
 
 .mf-brand {
@@ -22,24 +25,27 @@
   letter-spacing: .2px;
 }
 
-/* ===== NAVIGATION (FIXED) ===== */
+/* ===== NAVIGATION ===== */
 .mf-nav {
   display: flex;
   align-items: center;
-  gap: 16px; /* головне виправлення */
+  gap: 16px;
 }
 
 .mf-nav a {
   text-decoration: none;
   opacity: .9;
   transition: 0.2s;
+  position: relative;
+  z-index: 101;
+  cursor: pointer;
 }
 
 .mf-nav a:hover {
   opacity: 1;
 }
 
-/* кнопка Estimate */
+/* Estimate як кнопка */
 .mf-nav a:last-child {
   border: 1px solid #6c63ff;
   padding: 6px 12px;
@@ -49,6 +55,8 @@
 /* ===== HERO ===== */
 .mf-hero {
   padding: 28px 0 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .mf-h1 {
@@ -80,6 +88,8 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 14px;
   margin: 18px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .mf-card {
@@ -88,6 +98,8 @@
   border-radius: 14px;
   padding: 16px;
   background: rgba(255,255,255,.65);
+  position: relative;
+  z-index: 1;
 }
 
 .mf-card h3 {
@@ -106,6 +118,8 @@
   border-radius: 14px;
   border: 1px solid rgba(0,0,0,.12);
   background: rgba(0,0,0,.04);
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== BUTTONS ===== */
