@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Support — MultiFix Montréal</title>
-  <meta name="description" content="Non-structural support, documentation, and coordination with licensed contractors for owners and small property managers in Montréal." />
+  <title>Estimate — MultiFix Montréal</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -19,72 +18,89 @@
         <a href="gallery.html">Portfolio</a>
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
+        <a href="estimate.html">Estimate</a>
       </nav>
     </div>
   </header>
 
   <main class="mf-container">
+
     <section class="mf-hero">
-      <span class="mf-badge">Support</span>
-      <h1 class="mf-h1">Practical help that keeps units rental-ready</h1>
+      <span class="mf-badge">Estimate</span>
+      <h1 class="mf-h1">Bathroom Renovation Estimate</h1>
       <p class="mf-sub">
-        Clear documentation, careful non-structural assistance, and coordination with certified contractors when regulated trades are required.
+        Get a quick approximate cost based on your bathroom size and options.
+      </p>
+    </section>
+
+    <section class="mf-card">
+
+      <label>Length (m)</label>
+      <input type="number" id="length" step="0.1">
+
+      <label>Width (m)</label>
+      <input type="number" id="width" step="0.1">
+
+      <label>Level</label>
+      <select id="level">
+        <option value="800">Basic (800$/m²)</option>
+        <option value="1200">Standard (1200$/m²)</option>
+        <option value="1800">Premium (1800$/m²)</option>
+      </select>
+
+      <label>
+        <input type="checkbox" id="bathtub">
+        Replace bathtub (+1500$)
+      </label>
+
+      <label>
+        <input type="checkbox" id="tiles">
+        Replace tiles (+2000$)
+      </label>
+
+      <br><br>
+
+      <button onclick="calculate()">Calculate</button>
+
+      <div id="result" style="margin-top:20px;font-weight:bold;"></div>
+
+      <p style="font-size:12px;margin-top:15px;">
+        This estimate is for informational purposes only and does not constitute a binding quote.
       </p>
 
-      <div class="mf-notice">
-        <strong>Licensed trades:</strong>
-        Plumbing, electrical, gas, HVAC and structural work are performed by certified contractors only.
-        I can document the issue and coordinate the intervention.
-      </div>
-    </section>
-
-    <section class="mf-grid">
-      <div class="mf-card">
-        <h3>Documentation & reporting</h3>
-        <ul>
-          <li>Before/after photos</li>
-          <li>Simple summary: what was done, what to watch</li>
-          <li>Priority list for next steps (including licensed trades if needed)</li>
-        </ul>
-      </div>
-
-      <div class="mf-card">
-        <h3>Turnover support (move-in / move-out)</h3>
-        <ul>
-          <li>Readiness checks and follow-up</li>
-          <li>Small adjustments to improve presentation and comfort</li>
-          <li>Coordination of visits and access (by appointment)</li>
-        </ul>
-      </div>
-
-      <div class="mf-card">
-        <h3>Non-structural assistance</h3>
-        <ul>
-          <li>Sealing / caulking / minor draft & moisture prevention around trim areas</li>
-          <li>Minor adjustments: doors, handles, cabinet alignment</li>
-          <li>Mounting: TV, shelves, curtain rods, blinds</li>
-          <li>Furniture assembly and small carpentry fixes (non-structural)</li>
-        </ul>
-      </div>
-
-      <div class="mf-card">
-        <h3>Coordination with licensed contractors</h3>
-        <ul>
-          <li>Collect details (photos, symptoms, location)</li>
-          <li>Help you request quotes / schedule intervention</li>
-          <li>On-site coordination (if needed) and documented follow-up</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="mf-notice">
-      <strong>By appointment:</strong> text/email preferred.  
-      If you’re unsure whether a task is regulated, send photos — I’ll tell you what is safe to handle now and what needs licensed trades.
     </section>
 
     <footer class="mf-footer">
-      <div>MultiFix Montréal • Documentation • Coordination • Non-structural support</div>
+      <div>MultiFix Montréal • Estimate • Informational tool</div>
     </footer>
+
   </main>
+
+  <script>
+    function calculate() {
+      let l = parseFloat(document.getElementById('length').value);
+      let w = parseFloat(document.getElementById('width').value);
+      let lvl = parseFloat(document.getElementById('level').value);
+      let b = document.getElementById('bathtub').checked;
+      let t = document.getElementById('tiles').checked;
+
+      if (!l || !w) {
+        document.getElementById('result').innerText = 'Enter valid data';
+        return;
+      }
+
+      let base = l * w * lvl;
+
+      if (b) base += 1500;
+      if (t) base += 2000;
+
+      let min = Math.round(base * 0.85);
+      let max = Math.round(base * 1.2);
+
+      document.getElementById('result').innerText =
+        `Estimated: ${min} - ${max} $`;
+    }
+  </script>
+
 </body>
 </html>
