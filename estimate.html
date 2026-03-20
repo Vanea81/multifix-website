@@ -1,60 +1,75 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title data-lang="estimate_title">Bathroom Renovation Estimate</title>
-
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/lang.js" defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Estimate — MultiFix Montréal</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+  <header class="mf-container">
+    <div class="mf-topbar">
+      <div class="mf-brand">MultiFix Montréal</div>
+      <nav class="mf-nav">
+        <a href="index.html">Home</a>
+        <a href="owners.html">For Owners</a>
+        <a href="services.html">Support</a>
+        <a href="gallery.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="estimate.html">Estimate</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+  <main class="mf-container">
 
-<div class="container">
+    <section class="mf-hero">
+      <span class="mf-badge">Estimate</span>
+      <h1 class="mf-h1">Bathroom Renovation Estimate</h1>
+      <p class="mf-sub">
+        Quick approximate cost. Final quote after inspection.
+      </p>
+    </section>
 
-  <h1 data-lang="estimate_title">Bathroom Renovation Estimate</h1>
+    <section class="mf-card">
 
-  <label data-lang="length_label">Length (m)</label>
-  <input type="number" id="length" step="0.1">
+      <label>Length (m)</label>
+      <input type="number" id="length" step="0.1">
 
-  <label data-lang="width_label">Width (m)</label>
-  <input type="number" id="width" step="0.1">
+      <label>Width (m)</label>
+      <input type="number" id="width" step="0.1">
 
-  <label data-lang="level_label">Level</label>
-  <select id="level">
-    <option value="800">Basic (800$/m²)</option>
-    <option value="1200">Standard (1200$/m²)</option>
-    <option value="1800">Premium (1800$/m²)</option>
-  </select>
+      <label>Level</label>
+      <select id="level">
+        <option value="800">Basic (800$/m²)</option>
+        <option value="1200">Standard (1200$/m²)</option>
+        <option value="1800">Premium (1800$/m²)</option>
+      </select>
 
-  <label>
-    <input type="checkbox" id="bathtub">
-    Replace bathtub (+1500$)
-  </label>
+      <label>
+        <input type="checkbox" id="bathtub">
+        Replace bathtub (+1500$)
+      </label>
 
-  <label>
-    <input type="checkbox" id="tiles">
-    Replace tiles (+2000$)
-  </label>
+      <label>
+        <input type="checkbox" id="tiles">
+        Replace tiles (+2000$)
+      </label>
 
-  <button onclick="calculate()">Calculate</button>
+      <br><br>
 
-  <div id="result"></div>
+      <button onclick="calculate()">Calculate</button>
 
-  <p style="font-size:12px;margin-top:15px;">
-    This estimate is for informational purposes only and does not constitute a binding quote.
-  </p>
+      <div id="result" style="margin-top:20px;font-weight:bold;"></div>
 
-</div>
+      <p style="font-size:12px;margin-top:15px;">
+        Informational estimate only. Final price after inspection.
+      </p>
+
+    </section>
+
+  </main>
 
 <script>
 function calculate() {
@@ -70,14 +85,14 @@ function calculate() {
   }
 
   let base = l * w * lvl;
-
   if (b) base += 1500;
   if (t) base += 2000;
 
   let min = Math.round(base * 0.85);
   let max = Math.round(base * 1.2);
 
-  document.getElementById('result').innerText = `Estimated: ${min} - ${max} $`;
+  document.getElementById('result').innerText =
+    `Estimated: ${min} - ${max} $`;
 }
 </script>
 
