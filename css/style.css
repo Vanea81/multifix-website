@@ -1,7 +1,13 @@
 /* =========================
-   MultiFix FINAL CLEAN CSS (stable + clickable nav)
+   MultiFix FINAL STABLE CSS
    ========================= */
 
+/* RESET (мінімальний) */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== LAYOUT ===== */
 .mf-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -9,6 +15,11 @@
 }
 
 /* ===== HEADER ===== */
+header {
+  position: relative;
+  z-index: 9999;
+}
+
 .mf-topbar {
   display: flex;
   align-items: center;
@@ -17,7 +28,7 @@
   border-bottom: 1px solid rgba(0,0,0,.12);
 
   position: relative;
-  z-index: 100; /* важливо */
+  z-index: 9999;
 }
 
 .mf-brand {
@@ -30,6 +41,8 @@
   display: flex;
   align-items: center;
   gap: 16px;
+  position: relative;
+  z-index: 9999;
 }
 
 .mf-nav a {
@@ -37,7 +50,7 @@
   opacity: .9;
   transition: 0.2s;
   position: relative;
-  z-index: 101;
+  z-index: 10000;
   cursor: pointer;
 }
 
@@ -59,6 +72,14 @@
   z-index: 1;
 }
 
+/* ВАЖЛИВО — прибирає перекриття */
+.mf-hero::before,
+.mf-hero::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* ===== TEXT ===== */
 .mf-h1 {
   font-size: 34px;
   line-height: 1.15;
