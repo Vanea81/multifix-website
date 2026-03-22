@@ -142,4 +142,15 @@
 @media (max-width: 820px){
   .mf-card { grid-column: span 12; }
   .mf-h1 { font-size:28px; }
+} 
+/* ===== SIMPLE FIX (не чіпай більше нічого) ===== */
+
+.mf-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.mf-nav a {
+  display: inline-block;
+  padding: 8px 12px;
 }
